@@ -18,7 +18,7 @@ export default function Header() {
         <nav className="bg-white border-gray-200 dark:bg-gray-900 px-6">
             <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
                 {/*Logo*/}
-                <a href="/" className="flex items-center">
+                <Link href="/" className="flex items-center">
                     <Image
                         src="/logo.png"
                         alt="Logo"
@@ -31,7 +31,7 @@ export default function Header() {
                         {/* <span className="block">unlocking futures one door at a time</span> */}
                     </div>
                     
-                </a>
+                </Link>
 
                 {/*Navbar*/}
                 <ul className="font-medium flex space-x-8 items-center">
