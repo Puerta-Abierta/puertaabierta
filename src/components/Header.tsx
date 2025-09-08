@@ -5,12 +5,12 @@ import Link from "next/link";
 import cslx from 'clsx';
 
 const links = [
-    {name: "About", href: "/about"},
-    {name: "Services", href: "/services"},
-    {name: "Pricing", href: "/pricing"},
-    {name: "Contact", href: "/contact"},
-    {name: "Mentors", href: "/mentors"},
+    {name: "ABOUT", href: "/about"},
+    {name: "SERVICES", href: "/services"},
+    {name: "PRICING", href: "/pricing"},
     {name: "FAQ", href: "/faq"},
+    {name: "FREE INTRO", href: "/mentors"},
+    {name: "CONTACT", href: "/contact"},
 ]
 
 export default function Header() {
@@ -24,17 +24,18 @@ export default function Header() {
                         alt="Logo"
                         width={30}
                         height={30}
-                        className="mr-3"
+                        className="mr-3 transition-transform duration-500 hover:rotate-180"
                     />
                     <div className="flex flex-col leading-tight">
-                        <span className="block text-xl font-bold dark:text-white">Puerta Abierta</span>
+                         <h1 className="block text-2xl font-bold tracking-tighter bg-gradient-to-r from-indigo-100 via-indigo-500 to-indigo-950 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient">
+                             Puerta Abierta </h1>
                         {/* <span className="block">unlocking futures one door at a time</span> */}
                     </div>
                     
                 </Link>
 
                 {/*Navbar*/}
-                <ul className="font-medium flex space-x-8 items-center">
+                <ul className="flex space-x-8 items-center">
                     {links.map((link) => {
                         //const LinkIcon = link.icon;
                         return (
@@ -42,8 +43,14 @@ export default function Header() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="block py-3 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                            >{link.name}
+                                className={cslx(
+                                    "block text-[15px]  rounded-full",
+                                    link.name === "CONTACT"
+                                        ? "font-bold p-4 bg-indigo-300 hover:bg-indigo-400 md:dark:hover:bg-indigo-400 transition-colors duration-400"
+                                        : " md:p-0 py-3 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                )}
+                            >
+                                {link.name}
                             </Link>
                         </li>
                         );
