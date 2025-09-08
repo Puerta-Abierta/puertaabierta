@@ -20,14 +20,13 @@ export default function Problem() {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
-        {/* Big Number */}
           <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6">
             <p className="text-4xl font-bold text-[#6366F1]">$352B</p>
             <p className="text-gray-600 mt-2">
               Lost by U.S. adults in 2021 due to financial illiteracy
             </p>
           </div>
-          {/* Circle Chart */}
+          {/* Circle*/}
           <div className="flex flex-col items-center">
             <PieChart width={180} height={180}>
               <Pie
@@ -47,7 +46,6 @@ export default function Problem() {
             <p className="text-gray-600">of U.S. Students not confident in their financial education</p>
           </div>
 
-          {/* Big Number */}
           <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6">
             <p className="text-4xl font-bold text-[#6366F1]">59%</p>
             <p className="text-gray-600 mt-2">
