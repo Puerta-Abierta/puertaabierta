@@ -16,7 +16,7 @@ const links = [
 
 export default function Header() {
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 px-6">
+        <nav className="absolute top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/50 dark:bg-gray-900/80 px-6">
             <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
                 {/*Logo*/}
                 <Link href="/" className="flex items-center">

@@ -47,8 +47,28 @@
   100% { background-position: 0% 50%; }
 }
 
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 .animate-gradient {
   animation: gradient-flow 5s ease infinite;
+}
+
+.animate-gradient-x {
+  animation: gradient-x 8s ease-in-out infinite;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
