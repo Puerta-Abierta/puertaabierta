@@ -1,0 +1,858 @@
+{
+    "the-importance-of-financial-literacy": {
+      "title": "The Importance of Financial Literacy",
+      "description": "This unit introduces teachers and students to key concepts in financial literacy as they begin to engage with personal finance curriculum.",
+      "duration": "4 Hours",
+      "lessonsCount": 4,
+      "lessons": [
+        {
+          "title": "Basics Of Financial Decisions",
+          "duration": "60 min",
+          "objectives": [
+            "Investigate financial literacy role models and influencers and evaluate whether influencers are trustworthy sources for financial education and advice.",
+            "Define financial literacy by listing characteristics of a financially literate individual.",
+            "Apply basic financial literacy concepts to real world scenarios and make personal connections to the content."
+          ]
+        },
+        {
+          "title": "Financial Decisions",
+          "duration": "60 min",
+          "objectives": [
+            "Identify healthy spending behaviors and habits differentiating between essential needs and discretionary wants.",
+            "Assess personal money management style by citing evidence from personal financial decisions.",
+            "Design a personal short-term and long-term financial goal considering both immediate and future priorities."
+          ]
+        },
+        {
+          "title": "Responsible Financial Decisions",
+          "duration": "60 min",
+          "objectives": [
+            "Define the psychology of money, listing examples of thoughts and emotions that can accompany beliefs about money.",
+            "Analyze common marketing and advertising tactics, such as AIDAR, and the influence of external factors on impulsive spending behaviors.",
+            "Create a plan that applies emotional self-regulation to financial decision-making such as the PACED framework, prioritizing an individual’s needs and goals."
+          ]
+        },
+        {
+          "title": "The Importance of Financial Literacy Unit Wrap Up",
+          "duration": "60 min",
+          "objectives": [
+            "Reflect on learning by identifying key takeaways from The Importance of Financial Literacy unit.",
+            "Identify next steps to continue to build knowledge about The Importance of Financial Literacy.",
+            "Complete the 10-question assessment for The Importance of Financial Literacy unit."
+          ]
+        }
+      ],
+      "mentors": [
+        { "name": "Ruby", "session": "Free Intro Session" },
+        { "name": "Daniyal", "session": "Free Intro Session" }
+      ]
+    },
+        "paying-for-college": {
+          "title": "Paying for College",
+          "description": "This unit explores the costs associated with advanced degrees, available support for paying for college, and how to apply for these support channels.",
+          "duration": "5 Hours",
+          "lessonsCount": 5,
+          "lessons": [
+            {
+              "title": "Basics of College Costs",
+              "duration": "60 min",
+              "objectives": [
+                "Assess the personal reasons individuals choose to go to a 2-year or 4-year college.",
+                "Research the differences in cost of public and private colleges.",
+                "Calculate the costs of the first year of college, comparing educational and non-tuition expenses."
+              ]
+            },
+            {
+              "title": "Basics of Paying for College",
+              "duration": "60 min",
+              "objectives": [
+                "Compare and contrast loans, scholarships, grants, and work study as ways to pay for college.",
+                "Evaluate sources of financial aid for a student, evaluating eligibility requirements.",
+                "Describe the value of scholarships and identify strategies for finding, applying for, and evaluating scholarship offers."
+              ]
+            },
+            {
+              "title": "Understanding Student Loans",
+              "duration": "60 min",
+              "objectives": [
+                "Differentiate between federally subsidized, federally unsubsidized, and private loans, listing characteristics of each.",
+                "Calculate the cost of college loans based on interest rate, amount borrowed, and loan term.",
+                "Describe how the process of applying for student loans can lead to success in management and repayment of the loans."
+              ]
+            },
+            {
+              "title": "Applying for Student Loans",
+              "duration": "60 min",
+              "objectives": [
+                "Define FAFSA and how it is used to apply for financial aid.",
+                "List the steps to completing FAFSA, identifying the information that is required to complete it.",
+                "Create a personal plan to complete the FAFSA setting deadlines for the process."
+              ]
+            },
+            {
+              "title": "Paying for College Unit Wrap Up",
+              "duration": "60 min",
+              "objectives": [
+                "Reflect on learning by identifying key takeaways from the Paying for College unit.",
+                "Identify next steps to continue to build knowledge about Paying for College.",
+                "Complete the 10-question assessment for the Paying for College unit."
+              ]
+            }
+          ],
+          "mentors": [
+            { "name": "Ruby", "session": "Free Intro Session" },
+            { "name": "Daniyal", "session": "Free Intro Session" }
+          ]
+        },
+            "career-planning": {
+              "title": "Career Planning",
+              "description": "This unit explores options for career paths, advancing and changing your career, and how to get started with a side hustle.",
+              "duration": "6 Hours",
+              "lessonsCount": 6,
+              "lessons": [
+                {
+                  "title": "Basics Of Career Planning",
+                  "duration": "60 min",
+                  "objectives": [
+                    "Compare post-high school options, weighing the pros and cons of each.",
+                    "Create a career exploration plan by identifying goals, interests, values, and skills.",
+                    "Describe intangible benefits that influence career decisions."
+                  ]
+                },
+                {
+                  "title": "Considering a Job Offer",
+                  "duration": "60 min",
+                  "objectives": [
+                    "Assess personal values and priorities in the evaluation of job benefits offered by employers.",
+                    "Differentiate between contributory and non-contributory benefits.",
+                    "Evaluate competing job offers analyzing the benefits for each."
+                  ]
+                },
+                {
+                  "title": "Advancing Careers",
+                  "duration": "60 min",
+                  "objectives": [
+                    "Analyze the impact of education levels on employment earnings, researching the costs and benefits of pursuing education or training.",
+                    "Describe pay disparities and inequalities that exist for gender and race.",
+                    "Identify personal strategies to balance “work-life” balance."
+                  ]
+                },
+                {
+                  "title": "Changing Careers",
+                  "duration": "60 min",
+                  "objectives": [
+                    "Describe how changes in the job market can lead individuals to change careers.",
+                    "Analyze the impact of technology, economic fluctuations, and market conditions on changes in the job market.",
+                    "Evaluate your personal traits and proficiency in soft skills as consideration for career change."
+                  ]
+                },
+                {
+                  "title": "Building a Side Hustle",
+                  "duration": "60 min",
+                  "objectives": [
+                    "Design a plan for pursuing a side hustle, listing the advantages and disadvantages of gig work.",
+                    "Describe the costs and opportunities of starting a new business.",
+                    "Create a business plan that outlines the business description, customers, and marketing focus."
+                  ]
+                },
+                {
+                  "title": "Career Planning Unit Wrap Up",
+                  "duration": "60 min",
+                  "objectives": [
+                    "Reflect on learning by identifying key takeaways from the Career Planning unit.",
+                    "Identify next steps to continue to build knowledge about Career Planning.",
+                    "Complete the 10-question assessment for the Career Planning unit."
+                  ]
+                }
+              ],
+              "mentors": [
+                { "name": "Ruby", "session": "Free Intro Session" },
+                { "name": "Daniyal", "session": "Free Intro Session" }
+              ]
+            },
+                "economics": {
+                  "title": "Economics",
+                  "description": "This unit explores the basics of supply and demand, as well as the impacts of economic cycles on key aspects like inflation.",
+                  "duration": "3 Hours",
+                  "lessonsCount": 3,
+                  "lessons": [
+                    {
+                      "title": "Basics of Supply, Demand, and Inflation",
+                      "duration": "60 min",
+                      "objectives": [
+                        "Demonstrate how the relationship between supply and demand impacts market prices.",
+                        "Calculate change in inflation rates to show the impact on purchasing power.",
+                        "Compare nominal and real returns to illustrate how inflation affects an investment’s return."
+                      ]
+                    },
+                    {
+                      "title": "Economic Cycles",
+                      "duration": "60 min",
+                      "objectives": [
+                        "Describe the relationship between inflation and interest rates on savings.",
+                        "Prove how saving with I bonds can protect against inflation and protect purchasing power.",
+                        "Evaluate the positive or negative impact of inflation and interest rates on real-life personal finance scenarios."
+                      ]
+                    },
+                    {
+                      "title": "Economics Unit Wrap Up",
+                      "duration": "60 min",
+                      "objectives": [
+                        "Reflect on learning by identifying key takeaways from the Economics unit.",
+                        "Identify next steps to continue to build knowledge about Economics.",
+                        "Complete the 10-question assessment for the Economics unit."
+                      ]
+                    }
+                  ],
+                  "mentors": [
+                    { "name": "Ruby", "session": "Free Intro Session" },
+                    { "name": "Daniyal", "session": "Free Intro Session" }
+                  ]
+                },
+                    "taxes": {
+                      "title": "Taxes",
+                      "description": "This unit explores the key terms associated with taxes and how to file your taxes.",
+                      "duration": "8 Hours",
+                      "lessonsCount": 8,
+                      "lessons": [
+                        {
+                          "title": "Basics Of Taxes",
+                          "duration": "60 min",
+                          "objectives": [
+                            "Understand the primary purpose of taxes and everyday services that are funded by tax revenue.",
+                            "Describe how income, payroll, property, and sales tax categories are structured.",
+                            "Analyze the relationship between tax types, government entities that receive tax revenue and the impact of taxes on the individual."
+                          ]
+                        },
+                        {
+                          "title": "Income Taxes",
+                          "duration": "60 min",
+                          "objectives": [
+                            "Differentiate between types of earned and unearned income sources.",
+                            "Describe payroll taxes on earned income and their role in funding social programs.",
+                            "Identify the taxes associated with unearned income to calculate net income."
+                          ]
+                        },
+                        {
+                          "title": "Sales Taxes",
+                          "duration": "60 min",
+                          "objectives": [
+                            "Define sales tax as a percentage tax charged on the sale of certain goods and services.",
+                            "Calculate the sales tax amount for a given purchase by applying the appropriate tax rate of various locations.",
+                            "Distinguish taxable from non-taxable goods and the impact on the price of goods."
+                          ]
+                        },
+                        {
+                          "title": "Filing Taxes",
+                          "duration": "60 min",
+                          "objectives": [
+                            "Explain how W-4 information impacts the amount of tax withheld from paychecks.",
+                            "Analyze information from W-2 and 1099 forms to calculate taxable income, determine tax liability, and complete tax returns accurately."
+                          ]
+                        },
+                        {
+                          "title": "Completing a 1040",
+                          "duration": "60 min",
+                          "objectives": [
+                            "Identify Form 1040 as the primary document used for filing federal income tax returns.",
+                            "Determine the various types of personal, income, deduction, and credit information required to accurately fill out Form 1040.",
+                            "Distinguish between federal and state income tax rates and their roles in determining overall tax liability."
+                          ]
+                        },
+                        {
+                          "title": "Reducing Tax Payments",
+                          "duration": "60 min",
+                          "objectives": [
+                            "Distinguish between tax credits and deductions as strategies for reducing tax liability.",
+                            "Evaluate the implications of refundable and nonrefundable tax credits for individuals and households.",
+                            "Analyze how tax credits are incentives designed to encourage specific actions or decisions."
+                          ]
+                        },
+                        {
+                          "title": "TurboTax Simulation",
+                          "duration": "60 min",
+                          "objectives": [
+                            "Analyze pay stubs and W-2 forms to accurately determine an individual’s income and tax contributions.",
+                            "Utilize TurboTax to complete a tax filing, applying understanding of dependents, deductions, and refunds.",
+                            "Assess the various roles tax revenue plays in supporting public services, infrastructure, and government operations."
+                          ]
+                        },
+                        {
+                          "title": "Taxes Unit Wrap Up",
+                          "duration": "60 min",
+                          "objectives": [
+                            "Reflect on learning by identifying key takeaways from the Taxes unit.",
+                            "Identify next steps to continue to build knowledge about Taxes.",
+                            "Complete the 10-question assessment for the Taxes unit."
+                          ]
+                        }
+                      ],
+                      "mentors": [
+                        { "name": "Ruby", "session": "Free Intro Session" },
+                        { "name": "Daniyal", "session": "Free Intro Session" }
+                      ]
+                    },
+                        "banking": {
+                          "title": "Banking",
+                          "description": "This unit explores the basics of banking and common types of banking services.",
+                          "duration": "6 Hours",
+                          "lessonsCount": 6,
+                          "lessons": [
+                            {
+                              "title": "Basics of Banking, Banks and Credit Unions",
+                              "duration": "60 min",
+                              "objectives": [
+                                "Describe the purpose of banks and define banking terminology.",
+                                "Compare the advantages, costs, risks and services of commercial banks, investment banks, and credit unions.",
+                                "Evaluate scenarios in choosing a bank, assessing whether a bank or credit union is a better choice for the individual."
+                              ]
+                            },
+                            {
+                              "title": "Choosing a Checking Account",
+                              "duration": "60 min",
+                              "objectives": [
+                                "Describe the benefits and features of checking as they compare to other financial accounts.",
+                                "Analyze transactions on a bank statement to demonstrate how to manage money with a checking account.",
+                                "Explain how Federal Deposit Insurance Corporation (FDIC) regulates financial institutions and protects money deposited into a checking account."
+                              ]
+                            },
+                            {
+                              "title": "Choosing a Savings Account",
+                              "duration": "60 min",
+                              "objectives": [
+                                "Calculate the return on a deposit using the factors of balance, interest rate, and time.",
+                                "Describe the benefits and features of traditional savings accounts, certificates of deposit (CDs), and money market accounts.",
+                                "Evaluate bank accounts to determine which best meet the financial needs of an individual."
+                              ]
+                            },
+                            {
+                              "title": "Starting to Save Money",
+                              "duration": "60 min",
+                              "objectives": [
+                                "List the external influences and internal triggers that influence choosing to save or spend money.",
+                                "Apply the 50/30/20 budgeting strategy to achieve savings goals.",
+                                "Describe and identify market conditions that impact saving."
+                              ]
+                            },
+                            {
+                              "title": "Banking on the Go",
+                              "duration": "60 min",
+                              "objectives": [
+                                "List advantages and disadvantages of online banking.",
+                                "Differentiate between electronic banking, mobile banks, and mobile payments.",
+                                "Identify the risks of online banking, describing strategies and actions that can be used to protect personal information and avoid financial fraud."
+                              ]
+                            },
+                            {
+                              "title": "Banking Unit Wrap Up",
+                              "duration": "60 min",
+                              "objectives": [
+                                "Reflect on learning by identifying key takeaways from the Banking unit.",
+                                "Identify next steps to continue to build knowledge about Banking.",
+                                "Complete the 10-question assessment for the Banking unit."
+                              ]
+                            }
+                          ],
+                          "mentors": [
+                            { "name": "Ruby", "session": "Free Intro Session" },
+                            { "name": "Daniyal", "session": "Free Intro Session" }
+                          ]
+                        },
+                            "budgeting": {
+                              "title": "Budgeting",
+                              "description": "This unit explores the concept of budgets, how to create a budget and manage a budget over time.",
+                              "duration": "6 Hours",
+                              "lessonsCount": 6,
+                              "lessons": [
+                                {
+                                  "title": "Basics Of Budgeting",
+                                  "duration": "60 min",
+                                  "objectives": [
+                                    "Identify key components of a budget: income, savings, investments, and expenses.",
+                                    "Explain how budgeting helps individuals achieve short-term and long-term financial goals.",
+                                    "Use a budget calculator to create a budget given various scenarios."
+                                  ]
+                                },
+                                {
+                                  "title": "Preparing to Create a Budget",
+                                  "duration": "60 min",
+                                  "objectives": [
+                                    "Identify the differences between needs (essential spending) and wants (desired spending) in the context of financial planning.",
+                                    "Apply knowledge of fixed, variable, necessary, and desired budget categories to assess an individual’s spending habits.",
+                                    "Evaluate a personal budget to identify potential for reallocations, savings, and informed spending decisions."
+                                  ]
+                                },
+                                {
+                                  "title": "Developing a Budget",
+                                  "duration": "60 min",
+                                  "objectives": [
+                                    "Determine gross and net income from a pay stub based on given information.",
+                                    "Analyze how prioritizing savings can help achieve short-term and long-term financial goals.",
+                                    "Develop a comprehensive monthly budget considering fixed and variable expenses, savings, and lifestyle preferences."
+                                  ]
+                                },
+                                {
+                                  "title": "Making Changes to a Budget Over Time",
+                                  "duration": "60 min",
+                                  "objectives": [
+                                    "Describe the value of an emergency fund in mitigating the effects of unforeseen expenses.",
+                                    "Create a budget that sets category spending limits to prioritize saving for emergencies.",
+                                    "Determine personal priorities for charitable giving."
+                                  ]
+                                },
+                                {
+                                  "title": "Using a Budget to Make Financial Decisions",
+                                  "duration": "60 min",
+                                  "objectives": [
+                                    "Apply budgeting rules, such as 50/30/20, to make informed spending decisions.",
+                                    "Develop strategies to reach savings goals by allocating budget resources.",
+                                    "Evaluate a given budget and propose practical adjustments that align to financial goals."
+                                  ]
+                                },
+                                {
+                                  "title": "Budgeting Unit Wrap Up",
+                                  "duration": "60 min",
+                                  "objectives": [
+                                    "Reflect on learning by identifying key takeaways from the Budgeting unit.",
+                                    "Identify next steps to continue to build knowledge about Budgeting.",
+                                    "Complete the 10-question assessment for the Budgeting unit."
+                                  ]
+                                }
+                              ],
+                              "mentors": [
+                                { "name": "Ruby", "session": "Free Intro Session" },
+                                { "name": "Daniyal", "session": "Free Intro Session" }
+                              ]
+                            },
+                                "saving": {
+                                  "title": "Saving",
+                                  "description": "This unit explores how to save money, prepare for emergencies, and achieve financial goals.",
+                                  "duration": "6 Hours",
+                                  "lessonsCount": 6,
+                                  "lessons": [
+                                    {
+                                      "title": "Basics Saving",
+                                      "duration": "60 min",
+                                      "objectives": [
+                                        "Understand various types of savings accounts: traditional, online, money market, CDs, and interest-bearing.",
+                                        "Identify fees and compare interest rates among different savings accounts.",
+                                        "Understand how state and/or federal regulation works and the importance of solvency regulation for financial institutions."
+                                      ]
+                                    },
+                                    {
+                                      "title": "Saving for Emergencies",
+                                      "duration": "60 min",
+                                      "objectives": [
+                                        "Describe the importance of building an emergency fund and determine when to use emergency savings.",
+                                        "Compare financial options for storing an emergency fund to ensure safety, accessibility, and growth.",
+                                        "Synthesize effective strategies to prioritize saving for an emergency and apply them to financial scenarios."
+                                      ]
+                                    },
+                                    {
+                                      "title": "Saving for Retirement",
+                                      "duration": "60 min",
+                                      "objectives": [
+                                        "Understand the purpose, benefits and limitations of the Social Security program for retirement planning.",
+                                        "Determine how pre-tax and post-tax savings vehicles and employer-sponsored plans can be used to achieve retirement goals.",
+                                        "Use a retirement calculator to evaluate progress towards retirement savings in given scenarios."
+                                      ]
+                                    },
+                                    {
+                                      "title": "Saving for Other Long-Term Expenses",
+                                      "duration": "60 min",
+                                      "objectives": [
+                                        "Compare Traditional IRA, Roth IRA, and 401(k) based on their tax benefits.",
+                                        "Analyze various benefits of education savings accounts, such as I-bonds, 529 plans, and Coverdell Savings ESAs.",
+                                        "Research the costs associated with healthcare and consider benefits of HSAs to manage healthcare expenses."
+                                      ]
+                                    },
+                                    {
+                                      "title": "Combining Finances to Save Money",
+                                      "duration": "60 min",
+                                      "objectives": []
+                                    },
+                                    {
+                                      "title": "Saving Unit Wrap Up",
+                                      "duration": "60 min",
+                                      "objectives": []
+                                    }
+                                  ],
+                                  "mentors": [
+                                    { "name": "Ruby", "session": "Free Intro Session" },
+                                    { "name": "Daniyal", "session": "Free Intro Session" }
+                                  ]
+                                },
+                                    "credit": {
+                                      "title": "Credit",
+                                      "description": "This unit explores the basics of credit, how to open and use credit cards and loans, and manage your credit over time.",
+                                      "duration": "11 Hours",
+                                      "lessonsCount": 11,
+                                      "lessons": [
+                                        {
+                                          "title": "Basics Of Credit",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "Describe the benefits of using credit responsibly to make a positive impact on personal finances.",
+                                            "Calculate the cost of using credit given the factors of: principal, interest rate, and time.",
+                                            "Compare installment, revolving, and service as different types of credit, providing examples of each."
+                                          ]
+                                        },
+                                        {
+                                          "title": "Using Credit While Avoiding Debt",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "Explain the significance of credit history on an individual’s ability to borrow money, differentiating between good and bad debt.",
+                                            "Use a debt repayment calculator to evaluate the time and costs of repaying a loan based on given scenarios.",
+                                            "Assess an individual’s credit worthiness by calculating a debt to income ratio for an individual."
+                                          ]
+                                        },
+                                        {
+                                          "title": "Establishing a Credit History",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "Explain the features and benefits of various types of credit cards, including how to use credit cards responsibly.",
+                                            "Define credit score, listing the factors that impact a credit score and the impact of a high or low credit score.",
+                                            "Describe how a credit report can be used to see how responsible an individual has been with credit, listing who can and cannot access an individual credit report."
+                                          ]
+                                        },
+                                        {
+                                          "title": "Understanding Credit Scores",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "List the factors that impact a credit score and ways that an individual can increase their credit score.",
+                                            "Differentiate between a hard and soft credit inquiry, identifying the impact of an inquiry on a credit score.",
+                                            "Describe steps to remedy errors contained in a credit report."
+                                          ]
+                                        },
+                                        {
+                                          "title": "Evaluating Credit Card Offers and Terms",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "Evaluate credit card offers by comparing the APR, fees, and benefits of each credit card.",
+                                            "Explain how reviewing a credit card statement can be used to manage finances and monitor debt.",
+                                            "Calculate the monthly payments, interest charges, and amount of time to pay off a credit card balance."
+                                          ]
+                                        },
+                                        {
+                                          "title": "Loan Fundamentals",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "Compare the costs of borrowing using loans versus credit cards by calculating the monthly payments, total interest, and time required to repay debt.",
+                                            "Contrast between the loan categories: secured vs. unsecured, amortizing vs. non amortizing, and fixed rate vs. variable rate.",
+                                            "Evaluate competing loan offers, describing factors to consider when taking out a loan."
+                                          ]
+                                        },
+                                        {
+                                          "title": "Auto Loans",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "Describe an auto loan as a secured loan, utilizing the terms: loan amount, loan term, value, and monthly payment.",
+                                            "Evaluate auto loans to choose a loan that offers the best terms.",
+                                            "Calculate the loan-to-value ratio of an auto loan, proving how a down payment makes a loan beneficial to both the lender and the borrower."
+                                          ]
+                                        },
+                                        {
+                                          "title": "Mortage",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "Cite evidence to show how mortgages differ from other loan types, listing the features of mortgages including: loan term, interest rate, and loan process.",
+                                            "Calculate the down payment for a mortgage.",
+                                            "Compare monthly mortgage payments to choose the best mortgage for an individual."
+                                          ]
+                                        },
+                                        {
+                                          "title": "Managing Credit and Debt",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "List the consequences of taking on bad debt or failing to repay unsecured and secured debt.",
+                                            "Differentiate between good debt and bad debt and describe strategies to use credit responsibly before taking on debt.",
+                                            "Compare four debt solutions: credit counseling, debt consolidation, debt settlement, and bankruptcy."
+                                          ]
+                                        },
+                                        {
+                                          "title": "Alternative Credit Options",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "List types of alternative financial service providers, comparing the benefits, costs, and risks associated with each.",
+                                            "Compare a payday loan to a traditional loan by calculating interest cost and total costs of these two types of loans.",
+                                            "Prove how alternative financial service providers can lead to a debt cycle and give suggestions on how to avoid falling into a debt cycle."
+                                          ]
+                                        },
+                                        {
+                                          "title": "Credit Unit Wrap Up",
+                                          "duration": "60 min",
+                                          "objectives": [
+                                            "Reflect on learning by identifying key takeaways from the Credit unit.",
+                                            "Identify next steps to continue to build knowledge about Credit.",
+                                            "Complete the 10-question assessment for the Credit unit."
+                                          ]
+                                        }
+                                      ],
+                                      "mentors": [
+                                        { "name": "Ruby", "session": "Free Intro Session" },
+                                        { "name": "Daniyal", "session": "Free Intro Session" }
+                                      ]
+                                    },
+                                        "investing": {
+                                          "title": "Investing",
+                                          "description": "This unit covers key terminology, how to build portfolios, and navigating markets and investment opportunities over time.",
+                                          "duration": "11 Hours",
+                                          "lessonsCount": 11,
+                                          "lessons": [
+                                            {
+                                              "title": "Basics of Investing",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Define investing and how assets have potential to build wealth over time.",
+                                                "Distinguish investing from saving goals, considering factors such as time horizon, investment objectives, and risk tolerance.",
+                                                "Analyze the relative risks and potential returns of stocks, bonds, mutual funds, and ETFs."
+                                              ]
+                                            },
+                                            {
+                                              "title": "Understanding the Risks of Investing",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Analyze the impact of volatility, inflation, interest, liquidity, credit, and market risks on investments.",
+                                                "Investigate how the investment risk pyramid can be applied to different investment goals and risk profiles.",
+                                                "Evaluate the qualities of assets such as stocks and bonds in building a diversified and balanced investment portfolio."
+                                              ]
+                                            },
+                                            {
+                                              "title": "Building an Investment Portfolio",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Identify the properties that distinguish major asset classes, including stocks, bonds, real estate, speculative assets, and cash equivalents.",
+                                                "Understand the importance of building a balanced and diversified portfolio by incorporating a mix of asset classes with varying risk levels.",
+                                                "Describe the implications of time horizons for both short-term and long-term investing goals."
+                                              ]
+                                            },
+                                            {
+                                              "title": "Pricing of Financial Assets",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Identify factors that contribute to fluctuations in asset prices, including interest rates, inflation and market conditions.",
+                                                "Evaluate the impact of changes in the Federal Funds Rate on personal financial decisions, such as borrowing or investing.",
+                                                "Analyze how unemployment, consumer confidence, or industry events can potentially impact stock prices."
+                                              ]
+                                            },
+                                            {
+                                              "title": "Earning a Return on Investment",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Identify interest, capital gains, and dividend yields as different forms of investment returns.",
+                                                "Distinguish varying rates of return for various investments and apply the ROI formula to calculate nominal returns.",
+                                                "Synthesize real returns on investments considering the tax implications of short-term and long-term capital gains."
+                                              ]
+                                            },
+                                            {
+                                              "title": "Hiring a Financial Professional",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Identify the roles and qualifications of financial advisors.",
+                                                "Evaluate fees associated with financial advisors and their impact on investment returns.",
+                                                "Differentiate between financial advisors and various financial services providers, such as online brokerages and traditional brokerages."
+                                              ]
+                                            },
+                                            {
+                                              "title": "Government Incentives and Protections",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Analyze the impact of federal tax incentives on retirement savings within different IRA accounts.",
+                                                "Describe the responsibilities of key regulatory bodies in protecting investors and maintaining fair markets.",
+                                                "Explore the consequences of insider trading on individuals, companies, and broader financial markets."
+                                              ]
+                                            },
+                                            {
+                                              "title": "Navigating Alternative Investment Opportunities",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Describe the characteristics of speculative investments and identify the various markets where financial assets are traded.",
+                                                "Explain the concepts of cryptocurrency, NFTs, and blockchain and analyze their impacts on the financial market.",
+                                                "Apply investment strategies for purchasing speculative assets such as cryptocurrency and NFTs."
+                                              ]
+                                            },
+                                            {
+                                              "title": "Using Technology to Manage Investments",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Investigate the role of behavioral finance in investment decision-making.",
+                                                "Analyze the impact of management fees and costs associated on overall investment returns.",
+                                                "Evaluate the pros and cons of relying on technology for personal finance management."
+                                              ]
+                                            },
+                                            {
+                                              "title": "Evaluating Investment Asset Performance",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Explain how to use benchmarks such as the S&P 500 to assess the performance of an investment portfolio.",
+                                                "Explore the advantages of index funds as a low-risk investment option.",
+                                                "Analyze how expense ratios impact returns for active and passive investments."
+                                              ]
+                                            },
+                                            {
+                                              "title": "Investing Unit Wrap Up",
+                                              "duration": "60 min",
+                                              "objectives": [
+                                                "Reflect on learning by identifying key takeaways from the Investing unit.",
+                                                "Identify next steps to continue to build knowledge about Investing.",
+                                                "Complete the 10-question assessment for the Investing unit."
+                                              ]
+                                            }
+                                          ],
+                                          "mentors": [
+                                            { "name": "Ruby", "session": "Free Intro Session" },
+                                            { "name": "Daniyal", "session": "Free Intro Session" }
+                                          ]
+                                        },
+                                            "insurance": {
+                                              "title": "Insurance",
+                                              "description": "This unit explores the basics of insurance and common types of insurance policies.",
+                                              "duration": "10 Hours",
+                                              "lessonsCount": 10,
+                                              "lessons": [
+                                                {
+                                                  "title": "Basics Of Insurance",
+                                                  "duration": "60 min",
+                                                  "objectives": [
+                                                    "Understand the importance of insurance as a way to mitigate and protect against potential risks and financial losses.",
+                                                    "Define insurance premiums and explain the pros and cons of paying them based on individual needs.",
+                                                    "Evaluate appropriate insurance policy packages based on personal risk profiles, life priorities and financial ability."
+                                                  ]
+                                                },
+                                                {
+                                                  "title": "Auto Insurance",
+                                                  "duration": "60 min",
+                                                  "objectives": [
+                                                    "Explain how liability insurance protects drivers financially and how safe driving habits can lead to lower insurance premiums.",
+                                                    "Determine how the cost of premiums and deductibles impact the coverage of insurance policies.",
+                                                    "Apply knowledge of insurance package options, costs of premiums and deductibles, liability coverage to real-life driving scenarios."
+                                                  ]
+                                                },
+                                                {
+                                                  "title": "Home and Renters Insurance",
+                                                  "duration": "60 min",
+                                                  "objectives": [
+                                                    "Analyze financial and non-financial factors when choosing to rent or buy, such as lifestyle, maintenance, and future plans.",
+                                                    "Compare renters and homeowners insurance policies and evaluate which type of coverage fits different living situations.",
+                                                    "Assess appropriate personal liability coverage based on real-life situations."
+                                                  ]
+                                                },
+                                                {
+                                                  "title": "Health Insurance",
+                                                  "duration": "60 min",
+                                                  "objectives": [
+                                                    "Analyze the fundamental components and terminology of health insurance plans, policies, and medical bills.",
+                                                    "Evaluate the costs and the benefits of health insurance in managing medical expenses.",
+                                                    "Assess various health insurance options and determine the most suitable coverage based on individual needs and circumstances."
+                                                  ]
+                                                },
+                                                {
+                                                  "title": "Life Insurance",
+                                                  "duration": "60 min",
+                                                  "objectives": [
+                                                    "Evaluate the importance of having adequate life insurance coverage to financially protect one’s family.",
+                                                    "Compare types of life insurance policies and consider personal financial goals, family needs, risk tolerance, and budgetary constraints when choosing a policy.",
+                                                    "Evaluate the necessity and benefits of life insurance in various scenarios by assessing relevant factors and personal circumstances."
+                                                  ]
+                                                },
+                                                {
+                                                  "title": "Disability Insurance",
+                                                  "duration": "60 min",
+                                                  "objectives": [
+                                                    "Define the role of disability insurance in providing financial support when unable to work.",
+                                                    "Examine disability coverage options and providers, considering personal needs and eligibility factors and apply to real-life situations.",
+                                                    "Evaluate the impact of various disabilities on individuals’ lives and determine coverage options to mitigate financial risk."
+                                                  ]
+                                                },
+                                                {
+                                                  "title": "Unemployment Insurance and Medicare/Medicaid",
+                                                  "duration": "60 min",
+                                                  "objectives": [
+                                                    "Describe the key features of unemployment insurance, including eligibility criteria, benefit calculation, and duration.",
+                                                    "Evaluate government measures during economic downturns and their impact on reducing unemployment and supporting the workforce.",
+                                                    "Compare medicare and medicaid as government-sponsored health insurance programs that provide healthcare access to target populations."
+                                                  ]
+                                                },
+                                                {
+                                                  "title": "Extended Warranty Product Insurance",
+                                                  "duration": "60 min",
+                                                  "objectives": [
+                                                    "Explain how extended warranties function and identify the potential financial benefits and drawbacks for consumers.",
+                                                    "Determine the cost-effectiveness of extended warranties by considering factors such as product price, warranty terms, and repair.",
+                                                    "Predict future maintenance costs for various products and factor them into the warranty decision-making process"
+                                                  ]
+                                                },
+                                                {
+                                                  "title": "Insurance Fraud",
+                                                  "duration": "60 min",
+                                                  "objectives": [
+                                                    "Classify different types of insurance fraud and recognize potential fraudulent activities in real-world scenarios.",
+                                                    "Analyze strategies to identify, prevent and report insurance fraud to minimize financial loss and prevent ongoing fraudulent activities for others.",
+                                                    "Develop a plan of necessary actions and resources available to recover from insurance fraud."
+                                                  ]
+                                                },
+                                                {
+                                                  "title": "Insurance Unit Wrap Up",
+                                                  "duration": "60 min",
+                                                  "objectives": [
+                                                    "Reflect on learning by identifying key takeaways from the Insurance unit.",
+                                                    "Identify next steps to continue to build knowledge about Insurance.",
+                                                    "Complete the 10-question assessment for the Insurance unit."
+                                                  ]
+                                                }
+                                              ],
+                                              "mentors": [
+                                                { "name": "Ruby", "session": "Free Intro Session" },
+                                                { "name": "Daniyal", "session": "Free Intro Session" }
+                                              ]
+                                            },
+                                                "money-mindsets": {
+                                                  "title": "Money Mindsets",
+                                                  "description": "This unit explores the principles related to consumer behavior and consumer fraud.",
+                                                  "duration": "4 Hours",
+                                                  "lessonsCount": 4,
+                                                  "lessons": [
+                                                    {
+                                                      "title": "Basics of Spending Decisions",
+                                                      "duration": "60 min",
+                                                      "objectives": [
+                                                        "Evaluate personal purchases using product research, price comparison, and financial considerations, guided by decision-making frameworks like PACED.",
+                                                        "Identify common advertising tactics and pricing strategies, and analyze their psychological impact on spending behavior.",
+                                                        "Describe how inflation impacts the cost of certain goods, affecting consumer decisions."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Comparison Shopping and Negotiating Price",
+                                                      "duration": "60 min",
+                                                      "objectives": [
+                                                        "Differentiate between durable and non-durable goods, and understand their impact on purchase decisions.",
+                                                        "Apply factors of goods such as durability, costs and product features to future consumer purchases.",
+                                                        "Define effective negotiation tactics and evaluate the impact of negotiation on spending decisions."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Avoiding Scams and Fraud",
+                                                      "duration": "60 min",
+                                                      "objectives": [
+                                                        "Identify types of scams and fraud and describe the impact of falling victim to scams or fraud tactics.",
+                                                        "Investigate the purpose of consumer fraud protection groups and explain how these groups protect consumers.",
+                                                        "Evaluate ways to protect oneself from identity theft and apply strategies to protect personally identifiable information (PII)."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Money Mindsets Unit Wrap Up",
+                                                      "duration": "60 min",
+                                                      "objectives": [
+                                                        "Reflect on learning by identifying key takeaways from the Money Mindsets unit.",
+                                                        "Identify next steps to continue to build knowledge about Money Mindsets.",
+                                                        "Complete the 10-question assessment for the Money Mindsets unit."
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "mentors": [
+                                                    { "name": "Ruby", "session": "Free Intro Session" },
+                                                    { "name": "Daniyal", "session": "Free Intro Session" }
+                                                  ]
+                                                }
+  }
+  
