@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Ubuntu, Lato } from "next/font/google";
 import Link from 'next/link'
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
