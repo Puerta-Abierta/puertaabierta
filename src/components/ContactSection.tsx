@@ -63,7 +63,7 @@ export default function ContactSection() {
         setSubmitStatus('error')
         setErrorMessage(result.error || 'Something went wrong. Please try again.')
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error')
       setErrorMessage('Network error. Please check your connection and try again.')
     } finally {
@@ -80,7 +80,7 @@ export default function ContactSection() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Have questions about our programs or want to learn more? 
-            Send us a message and we'll get back to you within 24 hours.
+            Send us a message and we&apos;ll get back to you within 24 hours.
           </p>
         </div>
 
@@ -92,8 +92,8 @@ export default function ContactSection() {
                 Get in Touch
               </h3>
               <p className="text-gray-600 mb-8">
-                We're here to help you on your financial literacy journey. 
-                Whether you're a student, parent, or educator, we'd love to hear from you.
+                We&apos;re here to help you on your financial literacy journey. 
+                Whether you&apos;re a student, parent, or educator, we&apos;d love to hear from you.
               </p>
             </div>
 
@@ -107,7 +107,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900">Email Us</h4>
                   <p className="text-gray-600">support@puertaabierta.io</p>
-                  <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
+                  <p className="text-sm text-gray-500">We&apos;ll respond within 24 hours</p>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function ContactSection() {
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Thank you! Your message has been sent successfully. We'll get back to you soon.
+                  Thank you! Your message has been sent successfully. We&apos;ll get back to you soon.
                 </div>
               </div>
             )}

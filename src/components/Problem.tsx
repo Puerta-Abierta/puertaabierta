@@ -1,15 +1,10 @@
 "use client";
 
-import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip } from "recharts";
+import { PieChart, Pie, Cell } from "recharts";
 
 const pieData = [{ name: "Need Education", value: 73 }, { name: "No Access", value: 27 }];
 const COLORS = ["#6366F1", "#E5E7EB"]; // Purple + Gray
 
-const barData = [
-  { reason: "Financial Stress", value: 1 },
-  { reason: "Academic", value: 2 },
-  { reason: "Other", value: 3 }
-];
 
 export default function Problem() {
   return (

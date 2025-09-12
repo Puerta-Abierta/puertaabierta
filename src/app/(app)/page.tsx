@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners"
 import Problem from "@/components/Problem"

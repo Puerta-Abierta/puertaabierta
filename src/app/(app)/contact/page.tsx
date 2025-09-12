@@ -12,7 +12,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Have questions about our courses, mentorship programs, or need support? 
-              We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
             </p>
           </div>
 

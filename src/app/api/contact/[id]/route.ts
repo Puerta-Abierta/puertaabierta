@@ -39,7 +39,7 @@ export async function PATCH(
     
     // Only allow updating status and add a note
     const allowedFields = ['status', 'notes']
-    const updateData: any = {}
+    const updateData: Record<string, unknown> = {}
     
     for (const field of allowedFields) {
       if (body[field] !== undefined) {

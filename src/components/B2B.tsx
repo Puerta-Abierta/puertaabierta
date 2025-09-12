@@ -22,7 +22,7 @@ export default function B2B() {
             <div className="bg-green-50 border-l-4 border-green-400 p-6 rounded-r-lg">
               <h3 className="text-lg font-semibold text-green-800 mb-2">Solution</h3>
               <p className="text-green-700">
-                We provide ready-to-use curriculum with measurable results, backed by Intuit's proven methodology.
+                We provide ready-to-use curriculum with measurable results, backed by Intuit&apos;s proven methodology.
               </p>
             </div>
           </div>
