@@ -3,11 +3,12 @@ import { serverClient } from '@/sanity/lib/serverClient'
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params
     const contactSubmission = await serverClient.fetch(
-      `*[_type == "contactForm" && _id == "${params.id}"][0]`
+      `*[_type == "contactForm" && _id == "${id}"][0]`
     )
 
     if (!contactSubmission) {
@@ -32,9 +33,10 @@ export async function GET(
 
 export async function PATCH(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params
     const body = await request.json()
     
     // Only allow updating status and add a note
@@ -58,7 +60,7 @@ export async function PATCH(
     updateData.updatedAt = new Date().toISOString()
 
     const updatedSubmission = await serverClient
-      .patch(params.id)
+      .patch(id)
       .set(updateData)
       .commit()
 
@@ -78,10 +80,11 @@ export async function PATCH(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    await serverClient.delete(params.id)
+    const { id } = await params
+    await serverClient.delete(id)
 
     return NextResponse.json({
       success: true,
