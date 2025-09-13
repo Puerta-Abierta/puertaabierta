@@ -7,7 +7,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 
 const links = [
     {name: "ABOUT", href: "/about", tooltip: "Learn more about our mission and values"},
-    {name: "SERVICES", href: "/services", tooltip: "Explore our comprehensive services"},
+    {name: "COURSES", href: "/courses", tooltip: "Explore our courses"},
     {name: "PRICING", href: "/pricing", tooltip: "View our transparent pricing plans"},
     {name: "FAQ", href: "/faq", tooltip: "Find answers to common questions"},
     {name: "FREE INTRO", href: "/mentors", tooltip: "Book a free introductory session"},

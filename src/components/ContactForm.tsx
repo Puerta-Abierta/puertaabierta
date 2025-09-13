@@ -44,6 +44,8 @@ export default function ContactForm({ className = '' }: ContactFormProps) {
     setErrorMessage('')
 
     try {
+      console.log('Submitting form data:', formData)
+      
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -52,7 +54,11 @@ export default function ContactForm({ className = '' }: ContactFormProps) {
         body: JSON.stringify(formData),
       })
 
+      console.log('Response status:', response.status)
+      console.log('Response headers:', response.headers)
+
       const result = await response.json()
+      console.log('Response data:', result)
 
       if (response.ok) {
         setSubmitStatus('success')
@@ -67,7 +73,8 @@ export default function ContactForm({ className = '' }: ContactFormProps) {
         setSubmitStatus('error')
         setErrorMessage(result.error || 'Something went wrong. Please try again.')
       }
-    } catch {
+    } catch (error) {
+      console.error('Form submission error:', error)
       setSubmitStatus('error')
       setErrorMessage('Network error. Please check your connection and try again.')
     } finally {
@@ -78,7 +85,7 @@ export default function ContactForm({ className = '' }: ContactFormProps) {
   return (
     <div className={className}>
       <div className="mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
           Send us a Message
         </h2>
         <p className="text-gray-600">
@@ -186,7 +193,7 @@ export default function ContactForm({ className = '' }: ContactFormProps) {
             value={formData.message}
             onChange={handleInputChange}
             required
-            rows={6}
+            rows={4}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"
             placeholder="Tell us more about your inquiry..."
           />

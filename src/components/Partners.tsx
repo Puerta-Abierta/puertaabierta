@@ -11,7 +11,7 @@ const images = [
 export default function Partners() {
     return (
         <>
-            <div className="flex w-full justify-between items-center mt-5 mb-5">
+            <div className="flex w-full justify-between items-center mt-6 mb-6">
             {images.map((image) => (
                 <Image
                     key={image.src}
