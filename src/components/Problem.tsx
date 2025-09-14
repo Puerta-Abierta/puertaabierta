@@ -8,7 +8,7 @@ const COLORS = ["#6366F1", "#E5E7EB"]; // Purple + Gray
 
 export default function Problem() {
   return (
-    <section className="bg-gray-50 -mx-6 p-10">
+    <section className="bg-gray-50 p-10">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Financial stress is the <span className="font-bold">#1 reason</span> for College Dropout

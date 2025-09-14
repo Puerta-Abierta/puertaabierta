@@ -35,7 +35,7 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/mentors"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-indigo-300 text-white font-bold rounded-full hover:bg-indigo-400 transition-colors duration-400 text-md"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-800 transition-colors duration-300 text-md"
                 >
                   Book Free Intro Session
                 </Link>

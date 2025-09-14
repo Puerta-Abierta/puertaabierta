@@ -6,16 +6,6 @@ export interface CourseLesson {
 
 export interface CourseMentor {
   name: string
-  session: string
-  bio: string
-  specialties: string[]
-  image: {
-    asset: {
-      _ref: string
-      _type: 'reference'
-    }
-    _type: 'image'
-  }
 }
 
 export interface Course {

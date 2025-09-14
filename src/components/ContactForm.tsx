@@ -206,7 +206,7 @@ export default function ContactForm({ className = '' }: ContactFormProps) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="px-8 py-3 bg-blue-800 text-white font-semibold rounded-lg hover:bg-blue-900 focus:ring-4 focus:ring-blue-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {isSubmitting ? (
               <div className="flex items-center">

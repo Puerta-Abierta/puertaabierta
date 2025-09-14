@@ -251,7 +251,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-4 bg-indigo-300 text-white font-bold rounded-full hover:bg-indigo-400 focus:ring-4 focus:ring-indigo-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-400"
+                className="w-full px-8 py-4 bg-indigo-600 text-white font-bold rounded-full hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-400"
               >
                 {isSubmitting ? (
                   <div className="flex items-center justify-center">

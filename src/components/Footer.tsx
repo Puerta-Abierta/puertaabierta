@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="flex flex-col items-start md:items-end space-y-4">
           <Link 
             href="/book-intro" 
-            className="inline-block rounded-full bg-indigo-300 px-4 py-2 text-white text-sm font-bold hover:bg-indigo-400 transition-colors duration-400"
+            className="inline-block rounded-full bg-indigo-700 px-4 py-2 text-white text-sm font-bold hover:bg-indigo-800 transition-colors duration-400"
           >
             Book a Free Intro
           </Link>

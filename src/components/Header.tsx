@@ -47,7 +47,7 @@ export default function Header() {
                                         className={cslx(
                                             "block text-[15px] rounded-full",
                                             link.name === "CONTACT"
-                                                ? "font-bold p-4 bg-indigo-300 hover:bg-indigo-400 md:dark:hover:bg-indigo-400 transition-colors duration-400"
+                                                ? "font-bold px-4 py-2 bg-indigo-700 text-white rounded-full hover:bg-indigo-800 transition-colors duration-400"
                                                 : "md:p-0 py-3 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                         )}
                                     >
