@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import { ContactSection as ContactSectionType } from '@/sanity/lib/homepageTypes'
+import PortableTextRenderer from './PortableTextRenderer'
 
 interface ContactFormData {
   name: string
@@ -10,7 +12,11 @@ interface ContactFormData {
   message: string
 }
 
-export default function ContactSection() {
+interface ContactSectionProps {
+  content?: ContactSectionType
+}
+
+export default function ContactSection({ content }: ContactSectionProps) {
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
@@ -76,12 +82,20 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Ready to Get Started?
+            {content?.title || 'Ready to Get Started?'}
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Have questions about our programs or want to learn more? 
-            Send us a message and we&apos;ll get back to you within 24 hours.
-          </p>
+          <div className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <PortableTextRenderer 
+              content={content?.subtitle} 
+              className="prose prose-lg max-w-none"
+            />
+            {!content?.subtitle && (
+              <p>
+                Have questions about our programs or want to learn more? 
+                Send us a message and we&apos;ll get back to you within 24 hours.
+              </p>
+            )}
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -91,10 +105,18 @@ export default function ContactSection() {
               <h3 className="text-xl font-bold text-gray-900 mb-6">
                 Get in Touch
               </h3>
-              <p className="text-gray-600 text-md mb-10">
-                We&apos;re here to help you on your financial literacy journey. 
-                Whether you&apos;re a student, parent, or educator, we&apos;d love to hear from you.
-              </p>
+              <div className="text-gray-600 text-md mb-10">
+                <PortableTextRenderer 
+                  content={content?.description} 
+                  className="prose prose-sm max-w-none"
+                />
+                {!content?.description && (
+                  <p>
+                    We&apos;re here to help you on your financial literacy journey. 
+                    Whether you&apos;re a student, parent, or educator, we&apos;d love to hear from you.
+                  </p>
+                )}
+              </div>
             </div>
 
             <div className="space-y-10">

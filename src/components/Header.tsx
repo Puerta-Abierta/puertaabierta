@@ -4,17 +4,21 @@ import Image from "next/image";
 import Link from "next/link";
 import cslx from 'clsx';
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import CoursesDropdown from "./CoursesDropdown";
+import { Course } from '@/sanity/lib/courseTypes';
 
 const links = [
-    {name: "ABOUT", href: "/about", tooltip: "Learn more about our mission and values"},
-    {name: "COURSES", href: "/courses", tooltip: "Explore our courses"},
     {name: "PRICING", href: "/pricing", tooltip: "View our transparent pricing plans"},
     {name: "FAQ", href: "/faq", tooltip: "Find answers to common questions"},
     {name: "FREE INTRO", href: "/mentors", tooltip: "Book a free introductory session"},
     {name: "CONTACT", href: "/contact", tooltip: "Get in touch with our team"},
 ]
 
-export default function Header() {
+interface HeaderProps {
+  courses: Course[]
+}
+
+export default function Header({ courses }: HeaderProps) {
     return (
         <nav className="absolute top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/50 dark:bg-gray-900/80 px-6">
             <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
@@ -37,6 +41,29 @@ export default function Header() {
 
                 {/*Navbar*/}
                 <ul className="flex space-x-8 items-center">
+                    {/* About Link */}
+                    <li>
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <Link
+                                    href="/about"
+                                    className="block text-[15px] rounded-full md:p-0 py-3 px-3 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                >
+                                    ABOUT
+                                </Link>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>Learn more about our mission and values</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </li>
+                    
+                    {/* Courses Dropdown */}
+                    <li>
+                        <CoursesDropdown courses={courses} />
+                    </li>
+                    
+                    {/* Other Links */}
                     {links.map((link) => {
                         return (
                         <li key={link.name}>

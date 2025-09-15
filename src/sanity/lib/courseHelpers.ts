@@ -18,7 +18,7 @@ import {
   getDifficultiesQuery,
   getTagsQuery
 } from './courseQueries'
-import { Course, CourseFilters, CourseStats, PaginatedCourses } from './courseTypes'
+import { Course, CourseFilters, CourseStats, PaginatedCourses, CourseLesson, CourseMentor } from './courseTypes'
 
 // Get all courses
 export async function getAllCourses(): Promise<Course[]> {

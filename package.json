@@ -7,7 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "import-courses": "node scripts/import-courses.js"
+    "import-courses": "node scripts/import-courses.js",
+    "import-homepage": "node scripts/import-homepage.js",
+    "setup-homepage": "node scripts/setup-homepage.js",
+    "create-env": "node scripts/create-env.js",
+    "test-env": "node scripts/test-env.js",
+    "test-schema": "node scripts/test-schema.js",
+    "test-import": "node scripts/test-import.js",
+    "test-homepage": "node scripts/test-homepage-integration.js",
+    "deploy-schema": "node scripts/deploy-schema.js",
+    "fix-schema": "node scripts/fix-schema-issue.js"
   },
   "dependencies": {
     "@radix-ui/react-tooltip": "^1.2.8",

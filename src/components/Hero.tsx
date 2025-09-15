@@ -1,6 +1,12 @@
 import Link from "next/link";
+import { HeroSection } from '@/sanity/lib/homepageTypes'
+import PortableTextRenderer from './PortableTextRenderer'
 
-export default function Hero() {
+interface HeroProps {
+  content?: HeroSection
+}
+
+export default function Hero({ content }: HeroProps) {
   return (
     <section className="relative overflow-hidden min-h-screen">
       {/* Stripe-style Smooth Gradient Background */}
@@ -22,29 +28,33 @@ export default function Hero() {
             {/* Left Content */}
             <div className="text-white">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5">
-                Financial Literacy
-                <br />
-                for the Next Generation
+                {content?.title}
               </h1>
               
-              <p className="text-lg md:text-xl text-white/90 mb-8 max-w-lg">
-                Join the thousands of students who use Puerta Abierta to build financial skills, 
-                gain mentorship, and unlock their potential for a brighter future.
-              </p>
+              <div className="text-lg md:text-xl text-white/90 mb-8 max-w-lg">
+                <PortableTextRenderer 
+                  content={content?.subtitle} 
+                  className="prose prose-invert prose-lg"
+                />
+              </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/mentors"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-800 transition-colors duration-300 text-md"
-                >
-                  Book Free Intro Session
-                </Link>
-                <Link
-                  href="/services"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-800 transition-colors duration-300 text-md"
-                >
-                  Explore Services
-                </Link>
+                {content?.primaryButton && (
+                  <Link
+                    href={content.primaryButton.link || "/mentors"}
+                    className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-800 transition-colors duration-300 text-md"
+                  >
+                    {content.primaryButton.text || "Book Free Intro Session"}
+                  </Link>
+                )}
+                {content?.secondaryButton && (
+                  <Link
+                    href={content.secondaryButton.link || "/services"}
+                    className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-800 transition-colors duration-300 text-md"
+                  >
+                    {content.secondaryButton.text || "Explore Services"}
+                  </Link>
+                )}
               </div>
             </div>
             
