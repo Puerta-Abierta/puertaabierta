@@ -483,6 +483,17 @@ export const homepage = defineType({
       ],
     }),
 
+    // Featured Image
+    defineField({
+      name: 'featuredImage',
+      title: 'Featured Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      description: 'A featured image that can be used anywhere on the homepage',
+    }),
+
     // SEO Fields
     defineField({
       name: 'seo',

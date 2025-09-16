@@ -35,6 +35,19 @@ export interface HomepageContent {
   b2b: B2BSection
   partners: PartnersSection
   contact: ContactSection
+  featuredImage?: {
+    _type: 'image'
+    asset: {
+      _ref: string
+      _type: 'reference'
+    }
+    hotspot?: {
+      x: number
+      y: number
+      height: number
+      width: number
+    }
+  }
   seo?: SEOFields
 }
 

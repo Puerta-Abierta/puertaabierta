@@ -245,6 +245,21 @@ export async function getHomepageContent(): Promise<HomepageContent | Partial<Ho
             }
           }
         },
+        featuredImage {
+          _type,
+          asset-> {
+            _ref,
+            _type,
+            url,
+            metadata {
+              dimensions {
+                width,
+                height
+              }
+            }
+          },
+          hotspot
+        },
         seo {
           ...,
           metaDescription[] {

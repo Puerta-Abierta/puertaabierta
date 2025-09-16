@@ -83,6 +83,21 @@ export const homepageQuery = groq`
         icon
       }
     },
+    featuredImage {
+      _type,
+      asset-> {
+        _ref,
+        _type,
+        url,
+        metadata {
+          dimensions {
+            width,
+            height
+          }
+        }
+      },
+      hotspot
+    },
     seo {
       metaTitle,
       metaDescription,

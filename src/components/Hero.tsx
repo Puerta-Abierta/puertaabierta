@@ -1,12 +1,18 @@
+'use client'
+
 import Link from "next/link";
-import { HeroSection } from '@/sanity/lib/homepageTypes'
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { HeroSection, HomepageContent } from '@/sanity/lib/homepageTypes'
+import { urlFor } from '@/sanity/lib/image'
 import PortableTextRenderer from './PortableTextRenderer'
 
 interface HeroProps {
   content?: HeroSection
+  featuredImage?: HomepageContent['featuredImage']
 }
 
-export default function Hero({ content }: HeroProps) {
+export default function Hero({ content, featuredImage }: HeroProps) {
   return (
     <section className="relative overflow-hidden min-h-screen">
       {/* Stripe-style Smooth Gradient Background */}
@@ -58,47 +64,32 @@ export default function Hero({ content }: HeroProps) {
               </div>
             </div>
             
-            {/* Right Panel - Interactive Demo */}
-        {/*<div className="lg:ml-auto">
-            <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-auto lg:mx-0">
-            <div className="mb-6">
-                <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-semibold text-gray-900">Student Dashboard</h3>
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                </div>
-                
-                <div className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-4">
-                    <div className="text-sm text-gray-600 mb-1">Today's Progress</div>
-                    <div className="text-2xl font-bold text-gray-900">$2,450 saved</div>
-                    <div className="text-sm text-green-600">+15% from last week</div>
-                </div>
-                
-                <div className="bg-gray-50 rounded-lg p-4">
-                    <div className="text-sm text-gray-600 mb-1">This Week</div>
-                    <div className="text-2xl font-bold text-gray-900">$1,890 invested</div>
-                    <div className="text-sm text-blue-600">Portfolio growing</div>
-                </div>
-                </div>
-            </div>
-            
-            <div className="border-t pt-6">
-                <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-black rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">PA</span>
-                </div>
-                <div>
-                    <div className="font-semibold text-gray-900">Mentor Session</div>
-                    <div className="text-sm text-gray-600">30 min • Tomorrow 2:00 PM</div>
-                </div>
-                </div>
-                
-                <button className="w-full bg-gradient-to-r from-purple-600 to-black text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity">
-                Join Session
-                </button>
-            </div>
-            </div>
-        </div>*/}
+            {/* Right Panel - Featured Image */}
+            <motion.div 
+              className="lg:ml-auto"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.8, 
+                delay: 0.3,
+                ease: "easeOut"
+              }}
+            >
+              {/* <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                {featuredImage ? (
+                  <Image
+                    src={urlFor(featuredImage).width(600).height(500).url()}
+                    alt="Featured image"
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+                    <span className="text-white text-lg font-semibold">No image available</span>
+                  </div>
+                )}
+              </div> */}
+            </motion.div>
           </div>
         </div>
       </div>
