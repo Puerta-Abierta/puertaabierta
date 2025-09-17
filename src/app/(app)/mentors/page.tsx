@@ -17,7 +17,7 @@ export default async function MentorsPage() {
               Meet Your <span className="text-yellow-300">Mentors</span>
             </h1>
             <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
-              Learn from experienced professionals who are passionate about helping you succeed in your financial journey.
+              Learn from experienced professionals who are passionate about helping you succeed in your financial journey. Book a free session with a mentor to get personalized guidance.
             </p>
           </div>
         </div>

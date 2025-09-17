@@ -1,3 +1,5 @@
+import { StripeLink } from './stripeTypes'
+
 export interface CourseLesson {
   title: string
   duration: string
@@ -37,6 +39,7 @@ export interface Course {
     _type: 'image'
   }
   tags: string[]
+  stripeLinks?: StripeLink[]
 }
 
 export interface CourseFilters {

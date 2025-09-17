@@ -19,6 +19,7 @@ import {
   getTagsQuery
 } from './courseQueries'
 import { Course, CourseFilters, CourseStats, PaginatedCourses, CourseLesson, CourseMentor } from './courseTypes'
+import { getActiveStripeLinksByCourse, getCoursePricingOptions } from './stripeHelpers'
 
 // Get all courses
 export async function getAllCourses(): Promise<Course[]> {
@@ -177,5 +178,32 @@ export function getDifficultyLabel(difficulty: string): string {
 
 export function getCategoryLabel(category: string): string {
   return category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, ' ')
+}
+
+// Get courses with their Stripe links
+export async function getCoursesWithStripeLinks(): Promise<Course[]> {
+  const courses = await getAllCourses()
+  return courses
+}
+
+// Get a single course with its Stripe links
+export async function getCourseWithStripeLinks(slug: string): Promise<Course | null> {
+  const course = await getCourseBySlug(slug)
+  return course
+}
+
+// Get pricing options for a specific course
+export async function getCoursePricing(slug: string) {
+  return await getCoursePricingOptions(slug)
+}
+
+// Get the primary (lowest price) Stripe link for a course
+export async function getPrimaryStripeLinkForCourse(slug: string) {
+  const stripeLinks = await getActiveStripeLinksByCourse(slug)
+  if (stripeLinks.length === 0) return null
+  
+  return stripeLinks.reduce((lowest, current) => 
+    current.price < lowest.price ? current : lowest
+  )
 }
 

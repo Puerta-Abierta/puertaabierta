@@ -30,7 +30,18 @@ const courseFields = `
   featured,
   order,
   thumbnail,
-  tags
+  tags,
+  "stripeLinks": *[_type == "stripeLink" && courseSlug == slug.current && isActive == true] {
+    _id,
+    courseSlug,
+    stripeUrl,
+    priceId,
+    price,
+    isActive,
+    description,
+    pricingType,
+    hours
+  }
 `
 
 // Get all courses
