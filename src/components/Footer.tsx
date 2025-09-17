@@ -19,16 +19,16 @@ export default function Footer() {
 
         <div className="flex flex-col space-y-2 text-sm text-gray-600">
           <Link href="/about" className="hover:text-gray-900">About</Link>
-          <Link href="/programs" className="hover:text-gray-900">Programs</Link>
-          <Link href="/mentorship" className="hover:text-gray-900">Mentorship</Link>
-          <Link href="/resources" className="hover:text-gray-900">Resources</Link>
+          <Link href="/courses" className="hover:text-gray-900">Courses</Link>
+          <Link href="/mentors" className="hover:text-gray-900">Mentors</Link>
+          <Link href="/faq" className="hover:text-gray-900">FAQ</Link>
           <Link href="/contact" className="hover:text-gray-900">Contact Us</Link>
         </div>
 
         <div className="flex flex-col items-start md:items-end space-y-4">
           <Link 
-            href="/book-intro" 
-            className="inline-block rounded-xl bg-indigo-600 px-4 py-2 text-white text-sm font-medium hover:bg-indigo-500 transition"
+            href="/mentors" 
+            className="inline-block rounded-full bg-indigo-700 px-4 py-2 text-white text-sm font-bold hover:bg-indigo-800 transition-colors duration-400"
           >
             Book a Free Intro
           </Link>

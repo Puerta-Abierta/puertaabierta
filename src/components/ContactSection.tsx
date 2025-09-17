@@ -75,10 +75,10 @@ export default function ContactSection() {
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Have questions about our programs or want to learn more? 
             Send us a message and we&apos;ll get back to you within 24 hours.
           </p>
@@ -88,16 +88,16 @@ export default function ContactSection() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-6">
                 Get in Touch
               </h3>
-              <p className="text-gray-600 mb-8">
+              <p className="text-gray-600 text-md mb-10">
                 We&apos;re here to help you on your financial literacy journey. 
                 Whether you&apos;re a student, parent, or educator, we&apos;d love to hear from you.
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-10">
               <div className="flex items-start space-x-4">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -107,15 +107,38 @@ export default function ContactSection() {
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900">Email Us</h4>
                   <p className="text-gray-600">support@puertaabierta.io</p>
-                  <p className="text-sm text-gray-500">We&apos;ll respond within 24 hours</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-900">Free Consultation</h4>
+                  <p className="text-gray-600">Book a free session</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-900">Response Time</h4>
+                  <p className="text-gray-600">Within 24 hours</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-white rounded-2xl shadow-xl p-6">
+            <h3 className="text-xl font-bold text-gray-900 mb-6">
               Send us a Message
             </h3>
 
@@ -144,7 +167,7 @@ export default function ContactSection() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm text-gray-700 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -160,7 +183,7 @@ export default function ContactSection() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm text-gray-700 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -178,7 +201,7 @@ export default function ContactSection() {
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm text-gray-700 mb-2">
                     Phone Number
                   </label>
                   <input
@@ -193,7 +216,7 @@ export default function ContactSection() {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="subject" className="block text-sm text-gray-700 mb-2">
                     Subject *
                   </label>
                   <input
@@ -210,7 +233,7 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm text-gray-700 mb-2">
                   Message *
                 </label>
                 <textarea
@@ -219,7 +242,7 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={handleInputChange}
                   required
-                  rows={4}
+                  rows={2}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"
                   placeholder="Tell us more about your inquiry..."
                 />
@@ -228,7 +251,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-800 focus:ring-4 focus:ring-blue-200 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
+                className="w-full px-8 py-4 bg-indigo-600 text-white font-bold rounded-full hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-400"
               >
                 {isSubmitting ? (
                   <div className="flex items-center justify-center">

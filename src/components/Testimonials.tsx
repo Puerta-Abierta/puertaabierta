@@ -1,5 +1,7 @@
 'use client'
 
+import { TestimonialsSection } from '@/sanity/lib/homepageTypes'
+import PortableTextRenderer from './PortableTextRenderer'
 
 interface Testimonial {
   id: number
@@ -9,7 +11,7 @@ interface Testimonial {
   rating: number
 }
 
-const testimonials: Testimonial[] = [
+const fallbackTestimonials: Testimonial[] = [
   {
     id: 1,
     name: "Ben",
@@ -33,24 +35,28 @@ const testimonials: Testimonial[] = [
   }
 ]
 
-export default function Testimonials() {
+interface TestimonialsProps {
+  content?: TestimonialsSection
+}
+
+export default function Testimonials({ content }: TestimonialsProps) {
   return (
     <section className="py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
-            College applications are simpler with someone to guide you
+            {content?.title || 'College applications are simpler with someone to guide you'}
           </h2>
         </div>
 
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-3 gap-8 mr-10 ml-10">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-gray-100 rounded-lg p-8">
+          {(content?.testimonialList || fallbackTestimonials).map((testimonial, index) => (
+            <div key={index} className="bg-gray-100 rounded-lg p-8">
               {/* Stars*/}
               <div className="flex space-x-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
+                {[...Array(testimonial.rating || 5)].map((_, i) => (
                   <svg
                     key={i}
                     className="w-5 h-5 text-yellow-400"
@@ -62,9 +68,13 @@ export default function Testimonials() {
                 ))}
               </div>
               
-              <h3 className="text-sm font-bold text-gray-800 mb-4">
-                {testimonial.quote}
-              </h3>
+              <div className="text-sm font-bold text-gray-800 mb-4">
+                {typeof testimonial.quote === 'string' ? (
+                  testimonial.quote
+                ) : (
+                  <PortableTextRenderer content={testimonial.quote} />
+                )}
+              </div>
               
               <div className="text-gray-800">
                 <p className="text-sm font-semibold">{testimonial.name}</p>
