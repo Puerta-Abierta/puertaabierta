@@ -156,7 +156,7 @@ ${formData.message}
                Still Have Questions?
              </h3>
              <p className="text-lg text-gray-600 mb-6 text-center">
-               Can't find what you're looking for? Send us a message and we'll get back to you!
+               Can&apos;t find what you&apos;re looking for? Send us a message and we&apos;ll get back to you!
              </p>
              
              {isSubmitted ? (
@@ -167,7 +167,7 @@ ${formData.message}
                    </svg>
                  </div>
                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Message Sent!</h4>
-                 <p className="text-gray-600">Your email client should open with a pre-filled message. If it doesn't, please email us directly at support@puertaabierta.io</p>
+                 <p className="text-gray-600">Your email client should open with a pre-filled message. If it doesn&apos;t, please email us directly at support@puertaabierta.io</p>
                </div>
              ) : (
                <form onSubmit={handleSubmit} className="space-y-6">

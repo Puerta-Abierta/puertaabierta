@@ -1,10 +1,8 @@
 'use client'
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { HeroSection, HomepageContent } from '@/sanity/lib/homepageTypes'
-import { urlFor } from '@/sanity/lib/image'
 import PortableTextRenderer from './PortableTextRenderer'
 
 interface HeroProps {

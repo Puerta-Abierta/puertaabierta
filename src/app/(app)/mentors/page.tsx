@@ -1,5 +1,4 @@
 import { getAllMentors } from '@/sanity/lib/mentorHelpers'
-import { Mentor } from '@/sanity/lib/mentorTypes'
 import Image from 'next/image'
 import Link from 'next/link'
 

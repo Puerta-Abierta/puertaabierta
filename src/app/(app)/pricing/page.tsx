@@ -154,7 +154,7 @@ export default function PricingPage() {
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Frequently Asked Questions</h2>
           <div className="max-w-3xl mx-auto space-y-6">
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">What's the difference between individual classes and packages?</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">What&apos;s the difference between individual classes and packages?</h3>
               <p className="text-gray-600">Individual classes are perfect for specific topics at $59.99 each. Packages offer significant savings at $50 per hour, making them ideal for comprehensive learning or multiple students.</p>
             </div>
             <div>
@@ -163,11 +163,11 @@ export default function PricingPage() {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Do you offer refunds?</h3>
-              <p className="text-gray-600">Yes, we offer a 30-day money-back guarantee for all our courses. If you're not satisfied with your learning experience, we'll provide a full refund.</p>
+              <p className="text-gray-600">Yes, we offer a 30-day money-back guarantee for all our courses. If you&apos;re not satisfied with your learning experience, we&apos;ll provide a full refund.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">How do I get started with a package?</h3>
-              <p className="text-gray-600">Contact us to discuss your learning goals and we'll create a custom package that fits your schedule and budget. We'll work with you to design the perfect learning path.</p>
+              <p className="text-gray-600">Contact us to discuss your learning goals and we&apos;ll create a custom package that fits your schedule and budget. We&apos;ll work with you to design the perfect learning path.</p>
             </div>
           </div>
         </div>

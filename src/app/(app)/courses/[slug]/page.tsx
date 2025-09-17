@@ -70,7 +70,7 @@ export default async function CoursePage({ params }: CoursePageProps) {
       {/* Course CTA Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <CourseCTA course={course} />
+          <CourseCTA />
         </div>
       </section>
 

@@ -24,8 +24,18 @@ export async function POST(request: NextRequest) {
     const priceInCents = Math.round(price * 100)
 
     // Create line items based on pricing type
-    let lineItems: any[] = []
-    let description = ''
+    let lineItems: Array<{
+      price_data: {
+        currency: string
+        product_data: {
+          name: string
+          description: string
+          metadata?: Record<string, string>
+        }
+        unit_amount: number
+      }
+      quantity: number
+    }> = []
 
     if (pricingType === 'individual') {
       lineItems = [{
@@ -39,7 +49,6 @@ export async function POST(request: NextRequest) {
         },
         quantity: 1,
       }]
-      description = `Individual class: ${courseTitle}`
     } else if (pricingType === 'package') {
       lineItems = [{
         price_data: {
@@ -52,7 +61,6 @@ export async function POST(request: NextRequest) {
         },
         quantity: 1,
       }]
-      description = `${courseTitle} - ${hours} hour package`
     }
 
     // Create checkout session

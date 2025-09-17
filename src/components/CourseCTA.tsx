@@ -1,10 +1,4 @@
-import { Course } from '@/sanity/lib/courseTypes'
-
-interface CourseCTAProps {
-  course: Course
-}
-
-export default function CourseCTA({ course }: CourseCTAProps) {
+export default function CourseCTA() {
   return (
     <div className="bg-indigo-50 rounded-lg p-6 sticky top-6">
       <div className="text-center">

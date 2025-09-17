@@ -11,7 +11,7 @@ export default function RegionalShowcase() {
             Born in the Bay, Built in OC
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Bridging two of California's most innovative regions to bring you world-class financial education
+            Bridging two of California&apos;s most innovative regions to bring you world-class financial education
           </p>
         </div>
 
