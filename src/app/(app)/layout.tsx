@@ -4,6 +4,7 @@ import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getAllCourses } from '@/sanity/lib/courseHelpers';
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -55,6 +56,7 @@ export default async function RootLayout({
           </main>
           <Footer />
         </div>
+        <GoogleAnalytics gaId="G-FB0GQ302GJ" />
       </body>
     </html>
   );

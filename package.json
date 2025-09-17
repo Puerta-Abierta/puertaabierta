@@ -19,6 +19,7 @@
     "fix-schema": "node scripts/fix-schema-issue.js"
   },
   "dependencies": {
+    "@next/third-parties": "^15.5.3",
     "@radix-ui/react-tooltip": "^1.2.8",
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.8.1",
