@@ -21,13 +21,13 @@ export default function CoursesDropdown({ courses }: CoursesDropdownProps) {
       </TooltipTrigger>
       <TooltipContent>
         <div className="max-w-sm">
-          <p className="mb-2 font-medium">Available Courses</p>
-          <div className="space-y-1 max-h-64 overflow-y-auto">
+          {/* <p className="mb-2 font-medium">Available Courses</p> */}
+          <div className="space-y-2 max-h-85 overflow-y-auto">
             {courses.map((course) => (
               <Link
                 key={course._id}
                 href={`/courses/${course.slug.current}`}
-                className="block text-xs hover:text-primary-foreground/80 transition-colors"
+                className="block text-sm hover:text-primary-foreground/80 transition-colors"
               >
                 • {course.title}
               </Link>

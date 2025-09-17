@@ -33,6 +33,13 @@ const second = Ubuntu({
 export const metadata: Metadata = {
   title: "Puerta Abierta",
   description: "Financial Literacy for young adults",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+  themeColor: "#4f46e5",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Puerta Abierta",
+  },
 };
 
 export default async function RootLayout({
