@@ -7,8 +7,14 @@ export interface Mentor {
   bio: string
   picture: {
     asset: {
-      _ref: string
-      _type: 'reference'
+      _id: string
+      url: string
+      metadata: {
+        dimensions: {
+          width: number
+          height: number
+        }
+      }
     }
     _type: 'image'
     hotspot?: {
@@ -16,6 +22,12 @@ export interface Mentor {
       y: number
       height: number
       width: number
+    }
+    crop?: {
+      top: number
+      bottom: number
+      left: number
+      right: number
     }
   }
   link: string

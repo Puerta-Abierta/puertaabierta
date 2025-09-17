@@ -1,10 +1,8 @@
 'use client'
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { HeroSection, HomepageContent } from '@/sanity/lib/homepageTypes'
-import { urlFor } from '@/sanity/lib/image'
 import PortableTextRenderer from './PortableTextRenderer'
 
 interface HeroProps {
@@ -15,7 +13,7 @@ interface HeroProps {
 export default function Hero({ content, featuredImage }: HeroProps) {
   return (
     <section className="relative overflow-hidden min-h-screen">
-      {/* Stripe-style Smooth Gradient Background */}
+      {/* Smooth Gradient Background */}
       <div className="absolute inset-0">
         {/* Main gradient - yellow/orange to purple/blue */}
         <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-orange-500 via-purple-600 to-blue-600 bg-[length:200%_200%] animate-gradient-flow"></div>

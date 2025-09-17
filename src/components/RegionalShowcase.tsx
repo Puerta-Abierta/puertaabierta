@@ -11,7 +11,7 @@ export default function RegionalShowcase() {
             Born in the Bay, Built in OC
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Bridging two of California's most innovative regions to bring you world-class financial education
+            Bridging two of California&apos;s most innovative regions to bring you world-class financial education
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export default function RegionalShowcase() {
           {/* Bay Area Section */}
           <div className="flex flex-col items-center text-center">
             <div className="relative w-32 h-32 mb-6">
-              <Image
+              {/* <Image
                 src="/bay-area-logo.png"
                 alt="Bay Area"
                 fill
@@ -28,7 +28,7 @@ export default function RegionalShowcase() {
                   // Fallback to a placeholder if image doesn't exist
                   e.currentTarget.style.display = 'none'
                 }}
-              />
+              /> */}
               {/* Fallback icon if image doesn't exist */}
               <div className="w-full h-full bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-4xl font-bold">
                 SF

@@ -1,10 +1,11 @@
 import ContactForm from '@/components/ContactForm'
 import { getHomepageContent } from '@/sanity/lib/homepageHelpers'
 import { getContactMethods } from '@/sanity/lib/homepageHelpers'
+import { HomepageContent } from '@/sanity/lib/homepageTypes'
 
 export default async function ContactPage() {
   const homepageContent = await getHomepageContent()
-  const contactMethods = getContactMethods(homepageContent as any)
+  const contactMethods = getContactMethods(homepageContent as HomepageContent)
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 pt-24 pb-12">
       <div className="container mx-auto px-4">

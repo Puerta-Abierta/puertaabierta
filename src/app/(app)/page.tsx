@@ -21,7 +21,7 @@ export default async function Home() {
     <RegionalShowcase />
     <Testimonials content={homepageContent?.testimonials} />
     <Partners content={homepageContent?.partners} />
-    <ContactSection content={homepageContent?.contact} />
+    <ContactSection />
     </>
   );
 }

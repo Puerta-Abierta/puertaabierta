@@ -1,5 +1,4 @@
 import { groq } from 'next-sanity'
-import { HomepageContent, HomepageQueryResult } from './homepageTypes'
 
 // Query to get all homepage content
 export const homepageQuery = groq`

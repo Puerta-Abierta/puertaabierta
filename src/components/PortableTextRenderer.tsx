@@ -19,7 +19,7 @@ export default function PortableTextRenderer({ content, className = '' }: Portab
         }
 
         const text = block.children
-          .map((child: any) => child.text || '')
+          .map((child: { text?: string }) => child.text || '')
           .join('')
 
         if (!text) return null

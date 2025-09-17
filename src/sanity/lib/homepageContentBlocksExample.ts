@@ -41,41 +41,39 @@ export const contentBlockRenderingExamples = {
   // Example 1: Simple text rendering
   renderSimpleText: (portableText: PortableText) => {
     const plainText = portableTextToPlainText(portableText)
-    return <p>{plainText}</p>
+    return React.createElement('p', null, plainText)
   },
 
   // Example 2: HTML rendering with formatting
   renderHTML: (portableText: PortableText) => {
     const html = portableTextToHTML(portableText)
-    return <div dangerouslySetInnerHTML={{ __html: html }} />
+    return React.createElement('div', { dangerouslySetInnerHTML: { __html: html } })
   },
 
   // Example 3: Custom React component rendering
   renderCustom: (portableText: PortableText) => {
-    return (
-      <div className="content-blocks">
-        {portableText.map((block, index) => {
-          if (block._type === 'block') {
-            const text = block.children
-              ?.map(child => child.text || '')
-              .join('') || ''
+    return React.createElement('div', { className: 'content-blocks' },
+      ...portableText.map((block, index) => {
+        if (block._type === 'block') {
+          const text = block.children
+            ?.map(child => child.text || '')
+            .join('') || ''
 
-            switch (block.style) {
-              case 'h2':
-                return <h2 key={block._key || index}>{text}</h2>
-              case 'h3':
-                return <h3 key={block._key || index}>{text}</h3>
-              case 'h4':
-                return <h4 key={block._key || index}>{text}</h4>
-              case 'blockquote':
-                return <blockquote key={block._key || index}>{text}</blockquote>
-              default:
-                return <p key={block._key || index}>{text}</p>
-            }
+          switch (block.style) {
+            case 'h2':
+              return React.createElement('h2', { key: block._key || index }, text)
+            case 'h3':
+              return React.createElement('h3', { key: block._key || index }, text)
+            case 'h4':
+              return React.createElement('h4', { key: block._key || index }, text)
+            case 'blockquote':
+              return React.createElement('blockquote', { key: block._key || index }, text)
+            default:
+              return React.createElement('p', { key: block._key || index }, text)
           }
-          return null
-        })}
-      </div>
+        }
+        return null
+      })
     )
   }
 }
@@ -133,9 +131,7 @@ export async function getHomepageDataWithContentBlocks() {
     contact: {
       title: homepage.contact.title,
       subtitle: getContactSubtitlePortableText(homepage), // Returns PortableText
-      subtitlePlainText: getContactSubtitle(homepage), // Returns plain text
       description: getContactDescriptionPortableText(homepage), // Returns PortableText
-      descriptionPlainText: getContactDescription(homepage), // Returns plain text
       contactMethods: homepage.contact.contactMethods,
     },
   }

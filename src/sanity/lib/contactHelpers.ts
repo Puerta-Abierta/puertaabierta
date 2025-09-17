@@ -112,7 +112,7 @@ export async function updateContactSubmissionStatus(
   notes?: string
 ): Promise<ContactSubmission | null> {
   try {
-    const updateData: any = {
+    const updateData: Record<string, string> = {
       status,
       updatedAt: new Date().toISOString(),
     }
@@ -126,7 +126,7 @@ export async function updateContactSubmissionStatus(
       .set(updateData)
       .commit()
 
-    return result
+    return result as unknown as ContactSubmission
   } catch (error) {
     console.error('Error updating contact submission:', error)
     return null

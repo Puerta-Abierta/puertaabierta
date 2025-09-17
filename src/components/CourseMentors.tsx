@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import { urlFor } from '@/sanity/lib/image'
 import { CourseMentor } from '@/sanity/lib/courseTypes'
 
 interface CourseMentorsProps {

@@ -33,6 +33,7 @@ const contentBlock = {
                 title: 'URL',
                 name: 'href',
                 type: 'url',
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 validation: (Rule: any) => Rule.uri({
                   allowRelative: true,
                   scheme: ['http', 'https', 'mailto', 'tel']
