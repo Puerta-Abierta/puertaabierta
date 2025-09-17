@@ -6,7 +6,6 @@ import CourseLessons from '@/components/CourseLessons'
 import CourseMentors from '@/components/CourseMentors'
 import CourseCTA from '@/components/CourseCTA'
 import RelatedCourses from '@/components/RelatedCourses'
-import CoursePricing from '@/components/CoursePricing'
 
 interface CoursePageProps {
   params: Promise<{ slug: string }>
@@ -57,15 +56,6 @@ export default async function CoursePage({ params }: CoursePageProps) {
         </div>
       </section>
 
-      {/* Course Pricing Section */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <CoursePricing 
-            courseSlug={course.slug.current}
-            courseTitle={course.title}
-          />
-        </div>
-      </section>
 
       {/* Course CTA Section */}
       <section className="py-16 bg-gray-50">

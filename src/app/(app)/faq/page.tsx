@@ -26,7 +26,7 @@ const faqData = [
     questions: [
       {
         question: "How can I pay for the course?",
-        answer: "For individual classes you can purchase them on the Puerta Abierta Page under \"Our Pricing\" section. For the packaged classes, navigate to Financial Literacy tab and select the desired class. On the class page, there is a \"Buy Now\" option, where you can purchase the entire course. All the payments are processed securely with stripe."
+        answer: "For individual classes you can contact us through our pricing page. For the packaged classes, navigate to the courses section and select the desired class. Contact us to discuss pricing and enrollment options for any course."
       },
       {
         question: "I am receiving a payment error.",

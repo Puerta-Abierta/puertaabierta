@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import PaymentButton from '@/components/PaymentButton'
 
 export default function PricingPage() {
   return (
@@ -18,133 +17,103 @@ export default function PricingPage() {
         {/* Pricing Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
           {/* Individual Class */}
-          <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border-2 border-gray-100">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Individual Class</h3>
-              <p className="text-gray-600 mb-6">Perfect for trying out our courses or focusing on specific topics</p>
-              
-              <div className="mb-8">
-                <span className="text-5xl font-bold text-indigo-600">$59.99</span>
-                <span className="text-gray-600 ml-2">per class</span>
-              </div>
-
-              <ul className="text-left space-y-4 mb-8">
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  One hour of any course of your choice with a mentor
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Lifetime access to course materials
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Interactive exercises and quizzes
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Certificate of completion
-                </li>
-              </ul>
-
-              <PaymentButton
-                courseSlug="sample-course"
-                courseTitle="Sample Financial Literacy Course"
-                price={59.99}
-                pricingType="individual"
-                className="w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-              >
-                Try Individual Class - $59.99
-              </PaymentButton>
-            </div>
+          <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 flex flex-col h-full">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Individual Class</h3>
+            <p className="text-gray-600 mb-6 flex-grow">Perfect for trying out a course or focusing on a specific topic.</p>
+            <div className="text-4xl font-extrabold text-indigo-600 mb-6">$59.99<span className="text-xl font-medium text-gray-500">/class</span></div>
+            <ul className="text-gray-700 space-y-3 mb-8 flex-grow">
+              <li className="flex items-center">
+                <svg className="h-5 w-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Lifetime access to course materials
+              </li>
+              <li className="flex items-center">
+                <svg className="h-5 w-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Interactive exercises & quizzes
+              </li>
+              <li className="flex items-center">
+                <svg className="h-5 w-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Certificate of completion
+              </li>
+            </ul>
+            <Link
+              href="/contact"
+              className="w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition-colors duration-200 text-center"
+            >
+              Contact Us to Enroll
+            </Link>
           </div>
 
           {/* Package Pricing */}
-          <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 text-white relative overflow-hidden">
-            {/* Popular Badge */}
-            <div className="absolute top-0 right-0 bg-yellow-400 text-indigo-900 px-4 py-1 rounded-bl-lg text-sm font-bold">
-              BEST VALUE
+          <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl shadow-lg p-8 flex flex-col h-full text-white relative overflow-hidden">
+            <span className="absolute top-0 right-0 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-bl-lg">
+              Best Value
+            </span>
+            <h3 className="text-2xl font-bold mb-4">Mentorship Package</h3>
+            <p className="text-indigo-100 mb-6 flex-grow">
+              Comprehensive learning with personalized mentorship sessions at $50/hour.
+            </p>
+            <div className="text-4xl font-extrabold mb-6">
+              $50<span className="text-xl font-medium text-indigo-100">/hour</span>
             </div>
-            
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">Class Package</h3>
-              <p className="text-indigo-100 mb-6">Save money when you buy multiple classes</p>
-              
-              <div className="mb-8">
-                <span className="text-5xl font-bold">$50</span>
-                <span className="text-indigo-100 ml-2">per hour</span>
-                <div className="text-sm text-indigo-200 mt-2">
-                  (4-Hour Course = $200)
-                </div>
-              </div>
-
-              <ul className="text-left space-y-4 mb-8">
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-yellow-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Significant savings on multiple classes
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-yellow-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  All individual class benefits included
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-yellow-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Priority support and mentorship
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 text-yellow-400 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Flexible scheduling options
-                </li>
-              </ul>
-
-              <PaymentButton
-                courseSlug="sample-course"
-                courseTitle="Sample Financial Literacy Course"
-                price={200}
-                pricingType="package"
-                hours={4}
-                className="w-full bg-white text-indigo-600 font-semibold py-3 px-6 rounded-lg hover:bg-indigo-50 transition-colors duration-200"
-              >
-                Try Package - $200 (4 hours)
-              </PaymentButton>
-            </div>
+            <ul className="text-indigo-100 space-y-3 mb-8 flex-grow">
+              <li className="flex items-center">
+                <svg className="h-5 w-5 text-yellow-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                All benefits of individual class
+              </li>
+              <li className="flex items-center">
+                <svg className="h-5 w-5 text-yellow-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Dedicated 1:1 mentor sessions
+              </li>
+              <li className="flex items-center">
+                <svg className="h-5 w-5 text-yellow-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Priority support
+              </li>
+              <li className="flex items-center">
+                <svg className="h-5 w-5 text-yellow-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Flexible scheduling options
+              </li>
+            </ul>
+            <Link
+              href="/contact"
+              className="w-full bg-white text-indigo-600 font-semibold py-3 px-6 rounded-lg hover:bg-indigo-50 transition-colors duration-200 text-center"
+            >
+              Contact Us for Package Pricing
+            </Link>
           </div>
         </div>
 
-        {/* Pricing Examples */}
+        {/* Package Examples */}
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Package Pricing Examples</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Package Examples</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">2-Lesson Course</h3>
-              <div className="text-3xl font-bold text-indigo-600 mb-2">$100</div>
-              <div className="text-sm text-gray-600">$50 × 2 hours</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">2 Hours</h3>
+              <p className="text-3xl font-bold text-indigo-600 mb-2">$100</p>
+              <p className="text-gray-600">Perfect for a quick deep-dive into a specific topic</p>
             </div>
             <div className="text-center p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">4-Lesson Course</h3>
-              <div className="text-3xl font-bold text-indigo-600 mb-2">$200</div>
-              <div className="text-sm text-gray-600">$50 × 4 hours</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">4 Hours</h3>
+              <p className="text-3xl font-bold text-indigo-600 mb-2">$200</p>
+              <p className="text-gray-600">Comprehensive learning for most topics</p>
             </div>
             <div className="text-center p-6 border border-gray-200 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">8-Lesson Course</h3>
-              <div className="text-3xl font-bold text-indigo-600 mb-2">$400</div>
-              <div className="text-sm text-gray-600">$50 × 8 hours</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">8 Hours</h3>
+              <p className="text-3xl font-bold text-indigo-600 mb-2">$400</p>
+              <p className="text-gray-600">Complete mastery and advanced concepts</p>
             </div>
           </div>
         </div>
@@ -173,26 +142,24 @@ export default function PricingPage() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 rounded-2xl shadow-xl p-8 text-white">
-            <h2 className="text-3xl font-bold mb-4">Ready to Start Your Financial Journey?</h2>
-            <p className="text-xl text-indigo-100 mb-6 max-w-2xl mx-auto">
-              Join thousands of students who are building their financial future with Puerta Abierta.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/courses"
-                className="px-8 py-3 bg-white text-indigo-600 font-bold rounded-lg hover:bg-indigo-50 transition-colors duration-200"
-              >
-                Browse All Courses
-              </Link>
-              <Link
-                href="/contact"
-                className="px-8 py-3 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-indigo-600 transition-colors duration-200"
-              >
-                Get Custom Package
-              </Link>
-            </div>
+        <div className="text-center bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 rounded-2xl shadow-xl p-8 text-white">
+          <h2 className="text-3xl font-bold mb-4">Ready to Start Your Financial Journey?</h2>
+          <p className="text-lg text-indigo-100 mb-8 max-w-3xl mx-auto">
+            Whether you choose an individual class or a comprehensive package, we&apos;re here to guide you every step of the way.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg hover:bg-indigo-50 transition-colors duration-200"
+            >
+              Get Started Today
+            </Link>
+            <Link
+              href="/courses"
+              className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-indigo-600 transition-colors duration-200"
+            >
+              Browse All Courses
+            </Link>
           </div>
         </div>
       </div>
