@@ -36,6 +36,23 @@ export default function PricingPlans({ content }: PricingPlansProps) {
       ctaLink: "/contact",
       popular: true,
       gradient: true
+    },
+    {
+      name: "B2B Educational",
+      price: 25,
+      period: "/student",
+      description: "Perfect for schools, nonprofits, and educational institutions. Empower your students with financial literacy.",
+      features: [
+        "Bulk pricing for educational institutions",
+        "Custom curriculum integration",
+        "Teacher training and support",
+        "Progress tracking and reporting",
+        "Flexible payment terms"
+      ],
+      cta: "Contact Us for B2B Pricing",
+      ctaLink: "/contact",
+      popular: false,
+      gradient: false
     }
   ]
 
@@ -44,7 +61,7 @@ export default function PricingPlans({ content }: PricingPlansProps) {
   return (
     <section className="py-16 sm:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {plans.map((plan, index) => (
             <div
               key={index}

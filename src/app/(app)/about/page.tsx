@@ -38,7 +38,7 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              To help every student graduate financially confident—ready to budget, invest, and make informed choices for their future.
+              To help every student graduate financially confident; ready to budget, invest, and make informed choices for their future.
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="text-4xl font-bold text-indigo-600 mb-4">50+</div>
+              <div className="text-4xl font-bold text-indigo-600 mb-4">2</div>
               <p className="text-gray-600">Expert mentors guiding students</p>
             </motion.div>
           </div>

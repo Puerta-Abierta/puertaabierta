@@ -53,10 +53,10 @@ export default function Hero({ content, featuredImage }: HeroProps) {
                 )}
                 {content?.secondaryButton && (
                   <Link
-                    href={content.secondaryButton.link || "/services"}
+                    href={content.secondaryButton.link || "/courses"}
                     className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-800 transition-colors duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation"
                   >
-                    {content.secondaryButton.text || "Explore Services"}
+                    {content.secondaryButton.text || "Explore Courses"}
                   </Link>
                 )}
               </div>

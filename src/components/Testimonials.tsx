@@ -24,14 +24,14 @@ const fallbackTestimonials: Testimonial[] = [
     id: 2,
     name: "Carlos Mendez",
     title: "College Student",
-    quote: "The guidance and support from Puerta Abierta helped me navigate the entire college application process with confidence. I finally understood what I needed to do and when to do it. Highly recommend!",
+    quote: "The financial literacy program at Puerta Abierta completely changed how I manage my money. I learned budgeting, investing basics, and how to avoid debt. Now I feel confident about my financial future!",
     rating: 5
   },
   {
     id: 3,
     name: "Sofia Garcia",
     title: "Recent Graduate",
-    quote: "Puerta Abierta broke down the complex college application process into manageable steps that I could actually follow. Thanks to their support, I got accepted to my dream school!",
+    quote: "Puerta Abierta's mentorship program helped me understand personal finance in a way that actually made sense. I went from being scared of money to feeling empowered to make smart financial decisions!",
     rating: 5
   }
 ]
@@ -53,7 +53,7 @@ export default function Testimonials({ content }: TestimonialsProps) {
           viewport={{ once: true }}
         >
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6 md:mb-8 px-2">
-            {content?.title || 'College applications are simpler with someone to guide you'}
+            {content?.title || 'Financial literacy becomes easier with the right guidance'}
           </h2>
         </motion.div>
 

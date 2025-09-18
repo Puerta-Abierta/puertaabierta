@@ -111,11 +111,11 @@ export default function Header({ courses }: HeaderProps) {
 
             {/* Mobile Navigation Menu */}
             {isMobileMenuOpen && (
-                <div className="lg:hidden bg-white/95 backdrop-blur-md border-t border-gray-200/50 dark:bg-gray-900/95">
-                    <div className="px-4 py-2 space-y-1">
+                <div className="lg:hidden bg-white/95 backdrop-blur-md border-t border-gray-200/50 dark:bg-gray-900/95 mb-4">
+                    <div className="px-6 py-4 space-y-2 pb-8">
                         <Link
                             href="/about"
-                            className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700 rounded-md"
+                            className="block px-4 py-4 text-base font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700 rounded-md"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             ABOUT
@@ -123,7 +123,7 @@ export default function Header({ courses }: HeaderProps) {
                         
                         <Link
                             href="/courses"
-                            className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700 rounded-md"
+                            className="block px-4 py-4 text-base font-medium text-gray-700 hover:text-blue-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700 rounded-md"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             COURSES
@@ -134,7 +134,7 @@ export default function Header({ courses }: HeaderProps) {
                                 key={link.name}
                                 href={link.href}
                                 className={cslx(
-                                    "block px-3 py-3 text-base font-medium rounded-md",
+                                    "block px-4 py-4 text-base font-medium rounded-md",
                                     link.name === "CONTACT"
                                         ? "bg-indigo-700 text-white hover:bg-indigo-800"
                                         : "text-gray-700 hover:text-blue-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700"

@@ -403,8 +403,8 @@ export function getPrimaryButton(homepage: HomepageContent) {
  */
 export function getSecondaryButton(homepage: HomepageContent) {
   return homepage?.hero?.secondaryButton || {
-    text: 'Explore Services',
-    link: '/services'
+    text: 'Explore Courses',
+    link: '/courses'
   }
 }
 
@@ -639,8 +639,8 @@ export function getDefaultHomepageContent(): Partial<HomepageContent> {
         link: '/mentors'
       },
       secondaryButton: {
-        text: 'Explore Services',
-        link: '/services'
+        text: 'Explore Courses',
+        link: '/courses'
       }
     },
     problem: {
@@ -766,7 +766,7 @@ export function getDefaultHomepageContent(): Partial<HomepageContent> {
       ]
     },
     testimonials: {
-      title: 'College applications are simpler with someone to guide you',
+      title: 'Financial literacy becomes easier with the right guidance',
       testimonialList: [
         {
           name: 'Ben',
@@ -799,7 +799,7 @@ export function getDefaultHomepageContent(): Partial<HomepageContent> {
                 {
                   _type: 'span',
                   _key: 'testimonial-2-quote-text',
-                  text: 'The guidance and support from Puerta Abierta helped me navigate the entire college application process with confidence. I finally understood what I needed to do and when to do it. Highly recommend!'
+                  text: 'The financial literacy program at Puerta Abierta completely changed how I manage my money. I learned budgeting, investing basics, and how to avoid debt. Now I feel confident about my financial future!'
                 }
               ]
             }
@@ -818,7 +818,7 @@ export function getDefaultHomepageContent(): Partial<HomepageContent> {
                 {
                   _type: 'span',
                   _key: 'testimonial-3-quote-text',
-                  text: 'Puerta Abierta broke down the complex college application process into manageable steps that I could actually follow. Thanks to their support, I got accepted to my dream school!'
+                  text: 'Puerta Abierta\'s mentorship program helped me understand personal finance in a way that actually made sense. I went from being scared of money to feeling empowered to make smart financial decisions!'
                 }
               ]
             }
