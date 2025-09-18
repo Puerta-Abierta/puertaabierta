@@ -95,3 +95,4 @@ export default function RelatedCourses({ courses }: RelatedCoursesProps) {
 
 
 
+
