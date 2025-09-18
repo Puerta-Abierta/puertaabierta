@@ -5,6 +5,13 @@ export const homepageQuery = groq`
   *[_type == "homepage"][0] {
     _id,
     _type,
+    toast {
+      enabled,
+      message,
+      type,
+      duration,
+      position
+    },
     hero {
       title,
       subtitle,
@@ -249,12 +256,69 @@ export const seoQuery = groq`
   }
 `
 
+// Query to get toast configuration
+export const toastQuery = groq`
+  *[_type == "homepage"][0] {
+    toast {
+      enabled,
+      message,
+      type,
+      duration,
+      position
+    }
+  }
+`
+
 // Query to get homepage preview for admin
 export const homepagePreviewQuery = groq`
   *[_type == "homepage"][0] {
     hero {
       title,
       subtitle
+    }
+  }
+`
+
+// Query to get pricing content
+export const pricingQuery = groq`
+  *[_type == "pricing"][0] {
+    _id,
+    _type,
+    hero {
+      title,
+      subtitle,
+      description
+    },
+    plans {
+      title,
+      subtitle,
+      pricingPlans[] {
+        name,
+        price,
+        period,
+        description,
+        minStudents,
+        features,
+        cta,
+        ctaLink,
+        popular
+      }
+    },
+    packages {
+      title,
+      packageList[] {
+        hours,
+        price,
+        description
+      }
+    },
+    faq {
+      title,
+      subtitle,
+      faqList[] {
+        question,
+        answer
+      }
     }
   }
 `

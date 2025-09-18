@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import PageHero from '@/components/PageHero'
 
 const faqData = [
   {
@@ -82,30 +83,10 @@ ${formData.message}
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
-      {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            <motion.h1 
-              className="text-4xl md:text-6xl font-bold text-white mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              Frequently Asked <span className="text-yellow-300">Questions</span>
-            </motion.h1>
-            <motion.p 
-              className="text-xl text-indigo-100 max-w-3xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              Find answers to common questions about our financial literacy programs and services.
-            </motion.p>
-          </div>
-        </div>
-      </div>
+      <PageHero 
+        title="Frequently Asked Questions"
+        subtitle="Find answers to common questions about our financial literacy programs and services."
+      />
 
       {/* FAQ Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

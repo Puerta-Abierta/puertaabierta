@@ -58,6 +58,65 @@ export const homepage = defineType({
   title: 'Homepage Content',
   type: 'document',
   fields: [
+    // Toast Notification Section
+    defineField({
+      name: 'toast',
+      title: 'Toast Notification',
+      type: 'object',
+      fields: [
+        defineField({
+          name: 'enabled',
+          title: 'Enable Toast',
+          type: 'boolean',
+          initialValue: true,
+        }),
+        defineField({
+          name: 'message',
+          title: 'Toast Message',
+          type: 'string',
+          initialValue: 'Welcome to Puerta Abierta! 🎉',
+          validation: (Rule) => Rule.required(),
+        }),
+        defineField({
+          name: 'type',
+          title: 'Toast Type',
+          type: 'string',
+          options: {
+            list: [
+              { title: 'Success', value: 'success' },
+              { title: 'Error', value: 'error' },
+              { title: 'Info', value: 'info' },
+              { title: 'Warning', value: 'warning' },
+            ],
+          },
+          initialValue: 'info',
+        }),
+        defineField({
+          name: 'duration',
+          title: 'Duration (milliseconds)',
+          type: 'number',
+          initialValue: 5000,
+          validation: (Rule) => Rule.required().min(1000).max(30000),
+        }),
+        defineField({
+          name: 'position',
+          title: 'Position',
+          type: 'string',
+          options: {
+            list: [
+              { title: 'Top Right', value: 'top-right' },
+              { title: 'Top Center', value: 'top-center' },
+              { title: 'Top Left', value: 'top-left' },
+              { title: 'Bottom Right', value: 'bottom-right' },
+              { title: 'Bottom Center', value: 'bottom-center' },
+              { title: 'Bottom Left', value: 'bottom-left' },
+            ],
+          },
+          initialValue: 'bottom-right',
+        }),
+      ],
+    }),
+
     // Hero Section
     defineField({
       name: 'hero',

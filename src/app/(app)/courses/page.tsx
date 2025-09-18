@@ -2,42 +2,46 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { getAllCourses } from '@/sanity/lib/courseHelpers'
 import { urlFor } from '@/sanity/lib/image'
+import PageHero from '@/components/PageHero'
 
 export default async function CoursesPage() {
-  const courses = await getAllCourses()
+  // Fetch courses from Sanity with error handling
+  let courses: any[] = [];
+  try {
+    courses = await getAllCourses();
+  } catch (error) {
+    console.warn('Failed to fetch courses from Sanity:', error);
+    // Continue with empty courses array
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-indigo-600 via-purple-700 to-indigo-900 text-white pt-16 sm:pt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-          <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 px-2">
-              Financial Literacy Courses
-            </h1>
-            <p className="text-lg sm:text-xl text-indigo-100 mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Master essential financial skills with our comprehensive course library. 
-              Learn from expert mentors and build a brighter financial future.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 text-indigo-100">
-              <div className="flex items-center">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span className="font-medium text-sm sm:text-base">{courses.length} Courses Available</span>
-              </div>
-              <div className="flex items-center">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                <span className="font-medium text-sm sm:text-base">Expert Mentors</span>
-              </div>
-              <div className="flex items-center">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span className="font-medium text-sm sm:text-base">Free Intro Sessions</span>
-              </div>
+      <PageHero 
+        title="Financial Literacy Courses"
+        subtitle="Master essential financial skills with our comprehensive course library. Learn from expert mentors and build a brighter financial future."
+      />
+
+      {/* Stats Section */}
+      <div className="bg-white py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 text-gray-600">
+            <div className="flex items-center">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="font-medium text-sm sm:text-base">{courses.length} Courses Available</span>
+            </div>
+            <div className="flex items-center">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <span className="font-medium text-sm sm:text-base">Expert Mentors</span>
+            </div>
+            <div className="flex items-center">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="font-medium text-sm sm:text-base">Free Intro Sessions</span>
             </div>
           </div>
         </div>
@@ -46,7 +50,7 @@ export default async function CoursesPage() {
       {/* Courses Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
-          {courses.map((course) => (
+          {courses.map((course: any) => (
             <div
               key={course._id}
               className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
@@ -108,7 +112,7 @@ export default async function CoursesPage() {
                   <div className="mb-4">
                     <p className="text-sm text-gray-500 mb-2">Mentors:</p>
                     <div className="flex flex-wrap gap-1">
-                      {course.mentors.slice(0, 2).map((mentor, index) => (
+                      {course.mentors.slice(0, 2).map((mentor: any, index: number) => (
                         <span
                           key={index}
                           className="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs rounded-full"

@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getAllCourses } from '@/sanity/lib/courseHelpers';
 import { GoogleAnalytics } from "@next/third-parties/google";
+import ToastProvider from "@/components/ToastProvider";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -48,7 +49,14 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   // Fetch courses for the navigation dropdown
-  const courses = await getAllCourses();
+  // Wrap in try-catch to handle missing Sanity environment variables
+  let courses: any[] = [];
+  try {
+    courses = await getAllCourses();
+  } catch (error) {
+    console.warn('Failed to fetch courses from Sanity:', error);
+    // Continue with empty courses array
+  }
 
   return (
     <html lang="en">
@@ -56,6 +64,7 @@ export default async function RootLayout({
       <body
         className={`${lato.variable} ${second.variable} antialiased`}
       >
+        <ToastProvider />
         <div className="flex flex-col min-h-screen overflow-x-hidden">
           <Header courses={courses} />
           <main className="flex-1">

@@ -78,6 +78,87 @@ export function portableTextToHTML(portableText: PortableText | undefined): stri
 }
 
 /**
+ * Get toast configuration from Sanity
+ */
+export async function getToastConfig() {
+  try {
+    const result = await serverClient.fetch(`
+      *[_type == "homepage"][0] {
+        toast {
+          enabled,
+          message,
+          type,
+          duration,
+          position
+        }
+      }
+    `)
+    
+    console.log('Raw Sanity result:', result);
+    console.log('Toast data:', result?.toast);
+    return result?.toast || null
+  } catch (error) {
+    console.error('Error fetching toast config:', error)
+    return null
+  }
+}
+
+/**
+ * Get pricing content from Sanity
+ */
+export async function getPricingContent() {
+  try {
+    const result = await serverClient.fetch(`
+      *[_type == "pricing"][0] {
+        _id,
+        _type,
+        hero {
+          title,
+          subtitle,
+          description
+        },
+        plans {
+          title,
+          subtitle,
+          pricingPlans[] {
+            name,
+            price,
+            period,
+            description,
+            minStudents,
+            features,
+            cta,
+            ctaLink,
+            popular
+          }
+        },
+        packages {
+          title,
+          packageList[] {
+            hours,
+            price,
+            description
+          }
+        },
+        faq {
+          title,
+          subtitle,
+          faqList[] {
+            question,
+            answer
+          }
+        }
+      }
+    `)
+    
+    return result || null
+  } catch (error) {
+    console.error('Error fetching pricing content:', error)
+    return null
+  }
+}
+
+/**
  * Get the complete homepage content from Sanity
  */
 export async function getHomepageContent(): Promise<HomepageContent | Partial<HomepageContent> | null> {

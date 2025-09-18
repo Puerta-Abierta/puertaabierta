@@ -10,7 +10,14 @@ import ContactSection from "@/components/ContactSection"
 
 export default async function Home() {
   // Fetch homepage content from Sanity
-  const homepageContent = await getHomepageContent()
+  // Wrap in try-catch to handle missing Sanity environment variables
+  let homepageContent = null;
+  try {
+    homepageContent = await getHomepageContent();
+  } catch (error) {
+    console.warn('Failed to fetch homepage content from Sanity:', error);
+    // Continue with null content - components will use fallback data
+  }
 
   return (
     <>

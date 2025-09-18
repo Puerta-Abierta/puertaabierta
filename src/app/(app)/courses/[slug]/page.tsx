@@ -12,23 +12,38 @@ interface CoursePageProps {
 }
 
 export async function generateStaticParams() {
-  const { getAllCourses } = await import('@/sanity/lib/courseHelpers')
-  const courses = await getAllCourses()
-  
-  return courses.map((course) => ({
-    slug: course.slug.current,
-  }))
+  try {
+    const { getAllCourses } = await import('@/sanity/lib/courseHelpers')
+    const courses = await getAllCourses()
+    
+    return courses.map((course) => ({
+      slug: course.slug.current,
+    }))
+  } catch (error) {
+    console.warn('Failed to generate static params for courses:', error);
+    return []
+  }
 }
 
 export default async function CoursePage({ params }: CoursePageProps) {
   const { slug } = await params
-  const course = await getCourseBySlug(slug)
+  
+  // Fetch course data with error handling
+  let course = null;
+  let relatedCourses = [];
+  
+  try {
+    course = await getCourseBySlug(slug);
+    if (course) {
+      relatedCourses = await getRelatedCourses(course.category, course._id);
+    }
+  } catch (error) {
+    console.warn('Failed to fetch course data from Sanity:', error);
+  }
   
   if (!course) {
     notFound()
   }
-
-  const relatedCourses = await getRelatedCourses(course.category, course._id)
 
   return (
     <div className="min-h-screen bg-white">

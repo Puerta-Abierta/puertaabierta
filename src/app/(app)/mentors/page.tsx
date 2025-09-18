@@ -1,31 +1,29 @@
 import { getAllMentors } from '@/sanity/lib/mentorHelpers'
 import Image from 'next/image'
 import Link from 'next/link'
+import PageHero from '@/components/PageHero'
 
 export default async function MentorsPage() {
-  const mentors = await getAllMentors()
+  // Fetch mentors from Sanity with error handling
+  let mentors: any[] = [];
+  try {
+    mentors = await getAllMentors();
+  } catch (error) {
+    console.warn('Failed to fetch mentors from Sanity:', error);
+    // Continue with empty mentors array
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
-      {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Meet Your <span className="text-yellow-300">Mentors</span>
-            </h1>
-            <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
-              Learn from experienced professionals who are passionate about helping you succeed in your financial journey. Book a free session with a mentor to get personalized guidance.
-            </p>
-          </div>
-        </div>
-      </div>
+      <PageHero 
+        title="Meet Your Mentors"
+        subtitle="Learn from experienced professionals who are passionate about helping you succeed in your financial journey. Book a free session with a mentor to get personalized guidance."
+      />
 
       {/* Mentors Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {mentors.map((mentor) => (
+          {mentors.map((mentor: any) => (
             <div
               key={mentor._id}
               className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"

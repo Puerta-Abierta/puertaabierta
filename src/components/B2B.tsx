@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { B2BSection } from '@/sanity/lib/homepageTypes'
 import PortableTextRenderer from './PortableTextRenderer'
 
@@ -12,13 +13,26 @@ export default function B2B({ content }: B2BProps) {
   return (
     <section className="bg-indigo-600 -mx-4 sm:-mx-6 p-6 sm:p-8 md:p-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 sm:mb-10 md:mb-12">
+        <motion.h2 
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 sm:mb-10 md:mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           {content?.title || 'Why Partner With Puerta Abierta?'}
-        </h2>
+        </motion.h2>
         
         <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 text-left">
           {content?.challenges?.map((challenge, index) => (
-            <div key={index} className="space-y-4 sm:space-y-6">
+            <motion.div 
+              key={index} 
+              className="space-y-4 sm:space-y-6"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
               <div className="bg-gray-50 border-l-4 border-gray-400 p-4 sm:p-6 rounded-r-lg">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Challenge</h3>
                 <div className="text-gray-700">
@@ -31,7 +45,7 @@ export default function B2B({ content }: B2BProps) {
                   <PortableTextRenderer content={challenge.solution} />
                 </div>
               </div>
-            </div>
+            </motion.div>
           )) || (
             // Fallback content
             <>
