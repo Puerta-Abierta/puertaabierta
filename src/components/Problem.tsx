@@ -53,7 +53,7 @@ export default function Problem({ content }: ProblemProps) {
               >
                 <p className="text-4xl font-bold text-[#6366F1]">$352B</p>
                 <p className="text-gray-600 mt-2">
-                  Lost by U.S. adults in 2021 due to financial illiteracy
+                Financial Iliteracy cost U.S. adults more than $352 billion in 2021 according to National Financial Educators Council (NFEC)
                 </p>
               </motion.div>
               {/* Circle*/}
