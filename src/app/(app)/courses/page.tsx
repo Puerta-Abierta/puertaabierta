@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { getAllCourses } from '@/sanity/lib/courseHelpers'
 import { urlFor } from '@/sanity/lib/image'
 import PageHero from '@/components/PageHero'
-import { Course } from '@/sanity/lib/courseTypes'
+import { Course, CourseMentor } from '@/sanity/lib/courseTypes'
 
 export default async function CoursesPage() {
   // Fetch courses from Sanity with error handling
@@ -51,7 +51,7 @@ export default async function CoursesPage() {
       {/* Courses Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
-          {courses.map((course: any) => (
+          {courses.map((course: Course) => (
             <div
               key={course._id}
               className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
@@ -113,7 +113,7 @@ export default async function CoursesPage() {
                   <div className="mb-4">
                     <p className="text-sm text-gray-500 mb-2">Mentors:</p>
                     <div className="flex flex-wrap gap-1">
-                      {course.mentors.slice(0, 2).map((mentor: any, index: number) => (
+                      {course.mentors.slice(0, 2).map((mentor: CourseMentor, index: number) => (
                         <span
                           key={index}
                           className="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs rounded-full"

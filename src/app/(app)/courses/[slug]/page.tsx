@@ -6,6 +6,7 @@ import CourseLessons from '@/components/CourseLessons'
 import CourseMentors from '@/components/CourseMentors'
 import CourseCTA from '@/components/CourseCTA'
 import RelatedCourses from '@/components/RelatedCourses'
+import { Course } from '@/sanity/lib/courseTypes'
 
 interface CoursePageProps {
   params: Promise<{ slug: string }>
@@ -30,7 +31,7 @@ export default async function CoursePage({ params }: CoursePageProps) {
   
   // Fetch course data with error handling
   let course = null;
-  let relatedCourses = [];
+  let relatedCourses: Course[] = [];
   
   try {
     course = await getCourseBySlug(slug);

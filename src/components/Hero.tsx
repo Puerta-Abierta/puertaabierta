@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { HeroSection, HomepageContent } from '@/sanity/lib/homepageTypes'
+import { HeroSection } from '@/sanity/lib/homepageTypes'
 import PortableTextRenderer from './PortableTextRenderer'
 
 interface HeroProps {

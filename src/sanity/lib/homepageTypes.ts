@@ -220,6 +220,7 @@ export interface PricingPlan {
   cta: string
   ctaLink: string
   popular: boolean
+  gradient?: boolean
 }
 
 export interface PricingFeaturesSection {

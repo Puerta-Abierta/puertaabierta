@@ -24,7 +24,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Puerta Abierta ("open door") exists to close the financial literacy gap for young people. 
+            Puerta Abierta (&quot;open door&quot;) exists to close the financial literacy gap for young people. 
             We combine Intuit-powered curriculum with mentorship that feels personal, practical, and empowering.
           </motion.p>
         </div>
@@ -52,7 +52,7 @@ export default function AboutPage() {
               Our Impact
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              More than 800 students have already joined us on this journey, and together we're proving that financial confidence is possible for everyone.
+              More than 800 students have already joined us on this journey, and together we&apos;re proving that financial confidence is possible for everyone.
             </p>
           </div>
           
@@ -103,10 +103,10 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                At Puerta Abierta, we believe that money shouldn't be a mystery. That's why we built a program where students learn financial skills, share real-life stories, and connect with mentors who've been in their shoes.
+                At Puerta Abierta, we believe that money shouldn&apos;t be a mystery. That&apos;s why we built a program where students learn financial skills, share real-life stories, and connect with mentors who&apos;ve been in their shoes.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Financial stress is the #1 reason young adults drop out of college—and it doesn't have to be. We're an EdTech initiative bridging financial education with mentorship to give students the tools, confidence, and community they need to thrive.
+                Financial stress is the #1 reason young adults drop out of college—and it doesn&apos;t have to be. We&apos;re an EdTech initiative bridging financial education with mentorship to give students the tools, confidence, and community they need to thrive.
               </p>
             </motion.div>
             
@@ -118,7 +118,7 @@ export default function AboutPage() {
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
-                An entire generation empowered to make smart financial decisions, break cycles of debt, and build wealth. We're creating a future where every young person has the knowledge and confidence to navigate their financial journey successfully.
+                An entire generation empowered to make smart financial decisions, break cycles of debt, and build wealth. We&apos;re creating a future where every young person has the knowledge and confidence to navigate their financial journey successfully.
               </p>
             </motion.div>
           </div>
@@ -150,7 +150,7 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Intuit-Powered Curriculum</h3>
-              <p className="text-gray-600">Industry-leading financial education content that's practical, relevant, and easy to understand.</p>
+              <p className="text-gray-600">Industry-leading financial education content that&apos;s practical, relevant, and easy to understand.</p>
             </motion.div>
             
             <motion.div 
