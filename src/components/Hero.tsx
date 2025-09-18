@@ -7,10 +7,9 @@ import PortableTextRenderer from './PortableTextRenderer'
 
 interface HeroProps {
   content?: HeroSection
-  featuredImage?: HomepageContent['featuredImage']
 }
 
-export default function Hero({ content, featuredImage }: HeroProps) {
+export default function Hero({ content }: HeroProps) {
   return (
     <section className="relative overflow-hidden min-h-screen">
       {/* Smooth Gradient Background */}

@@ -1,4 +1,4 @@
-import { toast } from 'react-toastify';
+import { toast, ToastOptions } from 'react-toastify';
 
 export const useToast = () => {
   const showSuccess = (message: string) => {
@@ -17,7 +17,7 @@ export const useToast = () => {
     toast.warning(message);
   };
 
-  const showCustom = (message: string, options?: any) => {
+  const showCustom = (message: string, options?: ToastOptions) => {
     toast(message, options);
   };
 

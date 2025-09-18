@@ -77,7 +77,7 @@ export default function PricingFAQ({ content }: PricingFAQProps) {
 
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">
-            Still have questions? We're here to help.
+            Still have questions? We&apos;re here to help.
           </p>
           <a
             href="/contact"

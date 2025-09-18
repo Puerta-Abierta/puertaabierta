@@ -3,10 +3,11 @@ import Image from 'next/image'
 import { getAllCourses } from '@/sanity/lib/courseHelpers'
 import { urlFor } from '@/sanity/lib/image'
 import PageHero from '@/components/PageHero'
+import { Course } from '@/sanity/lib/courseTypes'
 
 export default async function CoursesPage() {
   // Fetch courses from Sanity with error handling
-  let courses: any[] = [];
+  let courses: Course[] = [];
   try {
     courses = await getAllCourses();
   } catch (error) {

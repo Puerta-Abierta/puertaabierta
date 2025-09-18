@@ -21,7 +21,7 @@ export default async function Home() {
 
   return (
     <>
-    <Hero content={homepageContent?.hero} featuredImage={homepageContent?.featuredImage} />
+    <Hero content={homepageContent?.hero} />
     <Problem content={homepageContent?.problem} />
     <Solution content={homepageContent?.solution} />
     <B2B content={homepageContent?.b2b} />

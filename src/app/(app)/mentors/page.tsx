@@ -2,10 +2,11 @@ import { getAllMentors } from '@/sanity/lib/mentorHelpers'
 import Image from 'next/image'
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import { Mentor } from '@/sanity/lib/mentorTypes'
 
 export default async function MentorsPage() {
   // Fetch mentors from Sanity with error handling
-  let mentors: any[] = [];
+  let mentors: Mentor[] = [];
   try {
     mentors = await getAllMentors();
   } catch (error) {

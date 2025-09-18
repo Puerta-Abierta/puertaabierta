@@ -2,12 +2,12 @@ import ContactForm from '@/components/ContactForm'
 import PageHero from '@/components/PageHero'
 import { getHomepageContent } from '@/sanity/lib/homepageHelpers'
 import { getContactMethods } from '@/sanity/lib/homepageHelpers'
-import { HomepageContent } from '@/sanity/lib/homepageTypes'
+import { HomepageContent, ContactMethod } from '@/sanity/lib/homepageTypes'
 
 export default async function ContactPage() {
   // Fetch homepage content from Sanity with error handling
   let homepageContent = null;
-  let contactMethods: any[] = [];
+  let contactMethods: ContactMethod[] = [];
   try {
     homepageContent = await getHomepageContent();
     contactMethods = getContactMethods(homepageContent as HomepageContent);

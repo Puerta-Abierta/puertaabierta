@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { getAllCourses } from '@/sanity/lib/courseHelpers';
 import { GoogleAnalytics } from "@next/third-parties/google";
 import ToastProvider from "@/components/ToastProvider";
+import { Course } from '@/sanity/lib/courseTypes';
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -50,7 +51,7 @@ export default async function RootLayout({
 }>) {
   // Fetch courses for the navigation dropdown
   // Wrap in try-catch to handle missing Sanity environment variables
-  let courses: any[] = [];
+  let courses: Course[] = [];
   try {
     courses = await getAllCourses();
   } catch (error) {
