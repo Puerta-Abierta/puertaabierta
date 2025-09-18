@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Linkedin, Instagram } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -33,9 +33,6 @@ export default function Footer() {
             Book a Free Intro
           </Link>
           <div className="flex space-x-4 text-gray-500">
-            <a href="mailto:info@puertaabierta.io" className="hover:text-gray-900">
-              <Mail size={20} />
-            </a>
             <a href="https://www.linkedin.com/company/puertaabierta-io" target="_blank" className="hover:text-gray-900">
               <Linkedin size={20} />
             </a>

@@ -1,25 +1,28 @@
 import ContactForm from '@/components/ContactForm'
+import PageHero from '@/components/PageHero'
 import { getHomepageContent } from '@/sanity/lib/homepageHelpers'
 import { getContactMethods } from '@/sanity/lib/homepageHelpers'
-import { HomepageContent } from '@/sanity/lib/homepageTypes'
+import { HomepageContent, ContactMethod } from '@/sanity/lib/homepageTypes'
 
 export default async function ContactPage() {
-  const homepageContent = await getHomepageContent()
-  const contactMethods = getContactMethods(homepageContent as HomepageContent)
+  // Fetch homepage content from Sanity with error handling
+  let homepageContent = null;
+  let contactMethods: ContactMethod[] = [];
+  try {
+    homepageContent = await getHomepageContent();
+    contactMethods = getContactMethods(homepageContent as HomepageContent);
+  } catch (error) {
+    console.warn('Failed to fetch homepage content from Sanity:', error);
+    // Continue with empty contact methods - ContactForm will handle fallback
+  }
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 pt-24 pb-12">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      <PageHero 
+        title="Contact Us"
+        subtitle="Have questions about our courses, mentorship programs, or need support? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
+      />
+      <div className="container mx-auto px-4 pb-12">
         <div className="max-w-4xl mx-auto">
-          {/* Header Section */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Contact Us
-            </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Have questions about our courses, mentorship programs, or need support? 
-              We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
-            </p>
-          </div>
 
           {/* Contact Form */}
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">

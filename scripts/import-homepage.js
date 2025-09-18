@@ -132,7 +132,7 @@ function extractHomepageData() {
       ]
     },
     testimonials: {
-      title: 'College applications are simpler with someone to guide you',
+      title: 'Financial literacy becomes easier with the right guidance',
       testimonialList: [
         {
           name: 'Ben',
@@ -147,7 +147,7 @@ function extractHomepageData() {
           name: 'Carlos Mendez',
           title: 'College Student',
           quote: createPortableTextBlock(
-            'The guidance and support from Puerta Abierta helped me navigate the entire college application process with confidence. I finally understood what I needed to do and when to do it. Highly recommend!',
+            'The financial literacy program at Puerta Abierta completely changed how I manage my money. I learned budgeting, investing basics, and how to avoid debt. Now I feel confident about my financial future!',
             'testimonial-2-quote'
           ),
           rating: 5
@@ -156,7 +156,7 @@ function extractHomepageData() {
           name: 'Sofia Garcia',
           title: 'Recent Graduate',
           quote: createPortableTextBlock(
-            'Puerta Abierta broke down the complex college application process into manageable steps that I could actually follow. Thanks to their support, I got accepted to my dream school!',
+            'Puerta Abierta\'s mentorship program helped me understand personal finance in a way that actually made sense. I went from being scared of money to feeling empowered to make smart financial decisions!',
             'testimonial-3-quote'
           ),
           rating: 5

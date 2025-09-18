@@ -176,10 +176,38 @@
 
 html {
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
   font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  /* Ensure touch targets are at least 44px */
+  button, a, input, select, textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improve touch interactions */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Better scrolling on iOS */
+  .overflow-y-auto {
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -1,6 +1,7 @@
 "use client";
 
 import { PieChart, Pie, Cell } from "recharts";
+import { motion } from "framer-motion";
 import { ProblemSection } from '@/sanity/lib/homepageTypes'
 import PortableTextRenderer from './PortableTextRenderer'
 
@@ -15,29 +16,54 @@ export default function Problem({ content }: ProblemProps) {
   return (
     <section className="bg-gray-50 p-10">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           {content?.title || 'Financial stress is the #1 reason for College Dropout'}
-        </h2>
+        </motion.h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {content?.statistics?.map((stat, index) => (
-            <div key={index} className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6">
+            <motion.div 
+              key={index} 
+              className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
               <p className="text-4xl font-bold text-[#6366F1]">{stat.value}</p>
               <div className="text-gray-600 mt-2">
                 <PortableTextRenderer content={stat.description} />
               </div>
-            </div>
+            </motion.div>
           )) || (
             // Fallback content
             <>
-              <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6">
+              <motion.div 
+                className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0 }}
+                viewport={{ once: true }}
+              >
                 <p className="text-4xl font-bold text-[#6366F1]">$352B</p>
                 <p className="text-gray-600 mt-2">
                   Lost by U.S. adults in 2021 due to financial illiteracy
                 </p>
-              </div>
+              </motion.div>
               {/* Circle*/}
-              <div className="flex flex-col items-center">
+              <motion.div 
+                className="flex flex-col items-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
                 <PieChart width={180} height={180}>
                   <Pie
                     data={pieData}
@@ -54,14 +80,20 @@ export default function Problem({ content }: ProblemProps) {
                 </PieChart>
                 <p className="text-2xl font-bold">73%</p>
                 <p className="text-gray-600">of U.S. Students not confident in their financial education</p>
-              </div>
+              </motion.div>
 
-              <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6">
+              <motion.div 
+                className="flex flex-col items-center justify-center bg-white shadow-md rounded-xl p-6"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+              >
                 <p className="text-4xl font-bold text-[#6366F1]">59%</p>
                 <p className="text-gray-600 mt-2">
                    Of College students considered dropping out due to financial stress.
                 </p>
-              </div>
+              </motion.div>
             </>
           )}
         </div>

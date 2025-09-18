@@ -1,23 +1,36 @@
 'use client'
 
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 export default function RegionalShowcase() {
   return (
     <section className="py-16 bg-gradient-to-r from-indigo-50 via-white to-purple-50">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-12">
+        <motion.div 
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Born in the Bay, Built in OC
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Bridging two of California&apos;s most innovative regions to bring you world-class financial education
           </p>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           {/* Bay Area Section */}
-          <div className="flex flex-col items-center text-center">
+          <motion.div 
+            className="flex flex-col items-center text-center"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <div className="relative w-32 h-32 mb-6">
               {/* <Image
                 src="/bay-area-logo.png"
@@ -38,10 +51,16 @@ export default function RegionalShowcase() {
             <p className="text-gray-600 max-w-xs">
               Born from the innovation and entrepreneurial spirit of Silicon Valley
             </p>
-          </div>
+          </motion.div>
 
           {/* Connecting Arrow */}
-          <div className="hidden md:block">
+          <motion.div 
+            className="hidden md:block"
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
             <svg
               className="w-8 h-8 text-indigo-400"
               fill="none"
@@ -55,10 +74,16 @@ export default function RegionalShowcase() {
                 d="M13 7l5 5m0 0l-5 5m5-5H6"
               />
             </svg>
-          </div>
+          </motion.div>
 
           {/* Orange County Section */}
-          <div className="flex flex-col items-center text-center">
+          <motion.div 
+            className="flex flex-col items-center text-center"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <div className="relative w-32 h-32 mb-6">
               <Image
                 src="/ucirvine.png"
@@ -71,7 +96,7 @@ export default function RegionalShowcase() {
             <p className="text-gray-600 max-w-xs">
               Built and refined through partnerships with UC Irvine and the OC community
             </p>
-          </div>
+          </motion.div>
         </div>
 
         {/* Additional Info */}

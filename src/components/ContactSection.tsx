@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 interface ContactFormData {
   name: string
@@ -74,7 +75,13 @@ export default function ContactSection() {
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Ready to Get Started?
           </h2>
@@ -82,11 +89,17 @@ export default function ContactSection() {
             Have questions about our programs or want to learn more? 
             Send us a message and we&apos;ll get back to you within 24 hours.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <motion.div 
+            className="space-y-8"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-6">
                 Get in Touch
@@ -134,10 +147,16 @@ export default function ContactSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-6">
+          <motion.div 
+            className="bg-white rounded-2xl shadow-xl p-6"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-xl font-bold text-gray-900 mb-6">
               Send us a Message
             </h3>
@@ -266,7 +285,7 @@ export default function ContactSection() {
                 )}
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

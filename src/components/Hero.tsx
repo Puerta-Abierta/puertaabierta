@@ -2,15 +2,14 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { HeroSection, HomepageContent } from '@/sanity/lib/homepageTypes'
+import { HeroSection } from '@/sanity/lib/homepageTypes'
 import PortableTextRenderer from './PortableTextRenderer'
 
 interface HeroProps {
   content?: HeroSection
-  featuredImage?: HomepageContent['featuredImage']
 }
 
-export default function Hero({ content, featuredImage }: HeroProps) {
+export default function Hero({ content }: HeroProps) {
   return (
     <section className="relative overflow-hidden min-h-screen">
       {/* Smooth Gradient Background */}
@@ -26,37 +25,37 @@ export default function Hero({ content, featuredImage }: HeroProps) {
       </div>
       
       <div className="relative z-10 flex items-center min-h-screen">
-        <div className="max-w-7xl mx-auto px-6 w-full py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full py-16 sm:py-20">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Left Content */}
-            <div className="text-white">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5">
+            <div className="text-white text-center lg:text-left">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-5">
                 {content?.title}
               </h1>
               
-              <div className="text-lg md:text-xl text-white/90 mb-8 max-w-lg">
+              <div className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-lg mx-auto lg:mx-0">
                 <PortableTextRenderer 
                   content={content?.subtitle} 
-                  className="prose prose-invert prose-lg"
+                  className="prose prose-invert prose-base sm:prose-lg max-w-none"
                 />
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                 {content?.primaryButton && (
                   <Link
                     href={content.primaryButton.link || "/mentors"}
-                    className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-800 transition-colors duration-300 text-md"
+                    className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-800 transition-colors duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation"
                   >
                     {content.primaryButton.text || "Book Free Intro Session"}
                   </Link>
                 )}
                 {content?.secondaryButton && (
                   <Link
-                    href={content.secondaryButton.link || "/services"}
-                    className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-800 transition-colors duration-300 text-md"
+                    href={content.secondaryButton.link || "/courses"}
+                    className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-800 transition-colors duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation"
                   >
-                    {content.secondaryButton.text || "Explore Services"}
+                    {content.secondaryButton.text || "Explore Courses"}
                   </Link>
                 )}
               </div>

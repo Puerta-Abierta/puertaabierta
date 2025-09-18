@@ -28,6 +28,7 @@ export type PortableText = PortableTextBlock[]
 export interface HomepageContent {
   _id: string
   _type: 'homepage'
+  toast?: ToastSection
   hero: HeroSection
   problem: ProblemSection
   solution: SolutionSection
@@ -49,6 +50,14 @@ export interface HomepageContent {
     }
   }
   seo?: SEOFields
+}
+
+export interface ToastSection {
+  enabled: boolean
+  message: string
+  type: 'success' | 'error' | 'info' | 'warning'
+  duration: number
+  position: 'top-right' | 'top-center' | 'top-left' | 'bottom-right' | 'bottom-center' | 'bottom-left'
 }
 
 export interface HeroSection {
@@ -166,6 +175,82 @@ export interface SEOFields {
       width: number
     }
   }
+}
+
+// Pricing page types
+export interface PricingContent {
+  _id: string
+  _type: 'pricing'
+  hero: PricingHeroSection
+  plans: PricingPlansSection
+  packages: PricingPackagesSection
+  faq: PricingFAQSection
+}
+
+export interface PricingHeroSection {
+  title: string
+  subtitle: string
+  description: string
+}
+
+export interface PricingPlansSection {
+  title: string
+  subtitle: string
+  plans: PricingPlan[]
+}
+
+export interface PricingPackagesSection {
+  title: string
+  packages: PricingPackage[]
+}
+
+export interface PricingPackage {
+  hours: string
+  price: number
+  description: string
+}
+
+export interface PricingPlan {
+  name: string
+  price: number
+  period: string
+  description: string
+  minStudents: string
+  features: string[]
+  cta: string
+  ctaLink: string
+  popular: boolean
+  gradient?: boolean
+}
+
+export interface PricingFeaturesSection {
+  title: string
+  subtitle: string
+  features: PricingFeature[]
+}
+
+export interface PricingFeature {
+  icon: string
+  title: string
+  description: string
+}
+
+export interface PricingFAQSection {
+  title: string
+  subtitle: string
+  faqs: PricingFAQ[]
+}
+
+export interface PricingFAQ {
+  question: string
+  answer: string
+}
+
+export interface PricingCTASection {
+  title: string
+  subtitle: string
+  primaryButton: Button
+  secondaryButton: Button
 }
 
 // Helper types for queries

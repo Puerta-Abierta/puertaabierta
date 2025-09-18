@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { TestimonialsSection } from '@/sanity/lib/homepageTypes'
 import PortableTextRenderer from './PortableTextRenderer'
 
@@ -23,14 +24,14 @@ const fallbackTestimonials: Testimonial[] = [
     id: 2,
     name: "Carlos Mendez",
     title: "College Student",
-    quote: "The guidance and support from Puerta Abierta helped me navigate the entire college application process with confidence. I finally understood what I needed to do and when to do it. Highly recommend!",
+    quote: "The financial literacy program at Puerta Abierta completely changed how I manage my money. I learned budgeting, investing basics, and how to avoid debt. Now I feel confident about my financial future!",
     rating: 5
   },
   {
     id: 3,
     name: "Sofia Garcia",
     title: "Recent Graduate",
-    quote: "Puerta Abierta broke down the complex college application process into manageable steps that I could actually follow. Thanks to their support, I got accepted to my dream school!",
+    quote: "Puerta Abierta's mentorship program helped me understand personal finance in a way that actually made sense. I went from being scared of money to feeling empowered to make smart financial decisions!",
     rating: 5
   }
 ]
@@ -41,25 +42,38 @@ interface TestimonialsProps {
 
 export default function Testimonials({ content }: TestimonialsProps) {
   return (
-    <section className="py-20 bg-gray-800">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-12 sm:py-16 md:py-20 bg-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
-            {content?.title || 'College applications are simpler with someone to guide you'}
+        <motion.div 
+          className="text-center mb-8 sm:mb-12 md:mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 sm:mb-6 md:mb-8 px-2">
+            {content?.title || 'Financial literacy becomes easier with the right guidance'}
           </h2>
-        </div>
+        </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mr-10 ml-10">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {(content?.testimonialList || fallbackTestimonials).map((testimonial, index) => (
-            <div key={index} className="bg-gray-100 rounded-lg p-8">
+            <motion.div 
+              key={index} 
+              className="bg-gray-100 rounded-lg p-4 sm:p-6 md:p-8"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
               {/* Stars*/}
-              <div className="flex space-x-1 mb-4">
+              <div className="flex space-x-1 mb-3 sm:mb-4">
                 {[...Array(testimonial.rating || 5)].map((_, i) => (
                   <svg
                     key={i}
-                    className="w-5 h-5 text-yellow-400"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -68,7 +82,7 @@ export default function Testimonials({ content }: TestimonialsProps) {
                 ))}
               </div>
               
-              <div className="text-sm font-bold text-gray-800 mb-4">
+              <div className="text-sm sm:text-base font-bold text-gray-800 mb-3 sm:mb-4">
                 {typeof testimonial.quote === 'string' ? (
                   testimonial.quote
                 ) : (
@@ -80,7 +94,7 @@ export default function Testimonials({ content }: TestimonialsProps) {
                 <p className="text-sm font-semibold">{testimonial.name}</p>
                 <p className="text-xs text-gray-600">{testimonial.title}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
