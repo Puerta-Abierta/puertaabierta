@@ -3,6 +3,7 @@ import { Ubuntu, Lato } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactLeadProvider from "@/components/ContactLeadProvider";
 import { getAllCourses } from '@/sanity/lib/courseHelpers';
 import { GoogleAnalytics } from "@next/third-parties/google";
 import ToastProvider from "@/components/ToastProvider";
@@ -66,13 +67,15 @@ export default async function RootLayout({
         className={`${lato.variable} ${second.variable} antialiased`}
       >
         <ToastProvider />
-        <div className="flex flex-col min-h-screen overflow-x-hidden">
-          <Header courses={courses} />
-          <main className="flex-1">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <ContactLeadProvider>
+          <div className="flex flex-col min-h-screen overflow-x-hidden">
+            <Header courses={courses} />
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </ContactLeadProvider>
         <GoogleAnalytics gaId="G-FB0GQ302GJ" />
       </body>
     </html>
