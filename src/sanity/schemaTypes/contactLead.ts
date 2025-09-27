@@ -21,7 +21,7 @@ export const contactLead = defineType({
       name: 'phone',
       title: 'Phone Number',
       type: 'string',
-      validation: (Rule) => Rule.regex(/^[\+]?[1-9][\d]{0,15}$/, {
+      validation: (Rule) => Rule.required().regex(/^[\+]?[1-9][\d]{0,15}$/, {
         name: 'phone',
         invert: false,
       }),

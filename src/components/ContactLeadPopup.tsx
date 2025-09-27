@@ -195,7 +195,7 @@ export default function ContactLeadPopup({ isOpen, onClose, className = '' }: Co
 
             <div>
               <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                Phone Number
+                Phone Number *
               </label>
               <input
                 type="tel"
@@ -203,8 +203,9 @@ export default function ContactLeadPopup({ isOpen, onClose, className = '' }: Co
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
+                required
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                placeholder="Enter your phone number (optional)"
+                placeholder="Enter your phone number"
               />
             </div>
 
