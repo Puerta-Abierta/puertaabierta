@@ -153,3 +153,7 @@ export default function CourseFilters({ categories, difficulties }: CourseFilter
 
 
 
+
+
+
+
