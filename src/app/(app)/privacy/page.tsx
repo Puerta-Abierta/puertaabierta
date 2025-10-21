@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
 
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 mb-8">
-              Puerta Abierta ("we," "our," or "us") values your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and protect the information you provide to us when you visit our website (puertaabierta.io) or interact with our services.
+              Puerta Abierta (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) values your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and protect the information you provide to us when you visit our website (puertaabierta.io) or interact with our services.
             </p>
 
             <section className="mb-8">
@@ -59,7 +59,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Marketing and Communications</h2>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
                 <li>By providing your email address or phone number, you consent to receiving communications from Puerta Abierta about new programs, events, and updates.</li>
-                <li>You may opt out of marketing communications at any time by clicking the "unsubscribe" link in our emails or contacting us directly.</li>
+                <li>You may opt out of marketing communications at any time by clicking the &quot;unsubscribe&quot; link in our emails or contacting us directly.</li>
               </ul>
             </section>
 
@@ -94,7 +94,7 @@ export default function PrivacyPolicyPage() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Children's Privacy</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Children&apos;s Privacy</h2>
               <p className="text-gray-700">
                 Our website and services are intended for individuals aged 13 and older. We do not knowingly collect information from children under 13.
               </p>
@@ -103,7 +103,7 @@ export default function PrivacyPolicyPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Updates to This Policy</h2>
               <p className="text-gray-700">
-                We may update this Privacy Policy periodically to reflect changes in our practices. Any updates will be posted on this page with a revised "Last Updated" date.
+                We may update this Privacy Policy periodically to reflect changes in our practices. Any updates will be posted on this page with a revised &quot;Last Updated&quot; date.
               </p>
             </section>
 
