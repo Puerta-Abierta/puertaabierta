@@ -23,6 +23,7 @@ export default function Footer() {
           <Link href="/mentors" className="hover:text-gray-900">Mentors</Link>
           <Link href="/faq" className="hover:text-gray-900">FAQ</Link>
           <Link href="/contact" className="hover:text-gray-900">Contact Us</Link>
+          <Link href="/privacy" className="hover:text-gray-900">Privacy Policy</Link>
         </div>
 
         <div className="flex flex-col items-start md:items-end space-y-4">
